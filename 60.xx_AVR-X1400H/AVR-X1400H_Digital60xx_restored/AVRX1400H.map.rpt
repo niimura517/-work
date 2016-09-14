@@ -1,0 +1,1408 @@
+Analysis & Synthesis report for AVRX1400H
+Tue Sep 13 13:51:12 2016
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (No Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: MUX2in:inst210|lpm_mux:LPM_MUX_component
+ 11. Parameter Settings for User Entity Instance: expander:inst141
+ 12. Parameter Settings for User Entity Instance: MUX2in:inst149|lpm_mux:LPM_MUX_component
+ 13. Parameter Settings for User Entity Instance: MUX2in:inst158|lpm_mux:LPM_MUX_component
+ 14. Parameter Settings for User Entity Instance: MUX2in:inst57|lpm_mux:LPM_MUX_component
+ 15. Parameter Settings for User Entity Instance: MUX2in:inst35|lpm_mux:LPM_MUX_component
+ 16. Parameter Settings for User Entity Instance: MUX2in:inst89|lpm_mux:LPM_MUX_component
+ 17. Parameter Settings for User Entity Instance: MUX2in:inst75|lpm_mux:LPM_MUX_component
+ 18. Parameter Settings for User Entity Instance: MUX2in:inst76|lpm_mux:LPM_MUX_component
+ 19. Parameter Settings for User Entity Instance: MUX2in:inst77|lpm_mux:LPM_MUX_component
+ 20. Parameter Settings for User Entity Instance: MUX2in:inst214|lpm_mux:LPM_MUX_component
+ 21. Parameter Settings for User Entity Instance: MUX2in:inst156|lpm_mux:LPM_MUX_component
+ 22. Parameter Settings for User Entity Instance: MUX2in:inst37|lpm_mux:LPM_MUX_component
+ 23. Parameter Settings for User Entity Instance: upcounter:inst19
+ 24. Parameter Settings for User Entity Instance: lpm_ff5:inst25|lpm_ff:lpm_ff_component
+ 25. Parameter Settings for User Entity Instance: MUX2in:inst164|lpm_mux:LPM_MUX_component
+ 26. Parameter Settings for User Entity Instance: MUX2in:inst165|lpm_mux:LPM_MUX_component
+ 27. Parameter Settings for User Entity Instance: upcounter:inst134
+ 28. Parameter Settings for User Entity Instance: MUX2in:inst72|lpm_mux:LPM_MUX_component
+ 29. Parameter Settings for User Entity Instance: MUX2in:inst73|lpm_mux:LPM_MUX_component
+ 30. Parameter Settings for User Entity Instance: DSD_TDM_Channel_Divider:inst79
+ 31. Parameter Settings for User Entity Instance: MUX2in:inst10|lpm_mux:LPM_MUX_component
+ 32. Parameter Settings for User Entity Instance: MUX2in:inst88|lpm_mux:LPM_MUX_component
+ 33. Parameter Settings for User Entity Instance: lpm_ff5:inst29|lpm_ff:lpm_ff_component
+ 34. Parameter Settings for User Entity Instance: MUX2in:inst215|lpm_mux:LPM_MUX_component
+ 35. Parameter Settings for User Entity Instance: MUX2in:inst155|lpm_mux:LPM_MUX_component
+ 36. Parameter Settings for User Entity Instance: MUX2in:inst36|lpm_mux:LPM_MUX_component
+ 37. Parameter Settings for User Entity Instance: MUX2in:inst69|lpm_mux:LPM_MUX_component
+ 38. Parameter Settings for User Entity Instance: MUX2in:inst108|lpm_mux:LPM_MUX_component
+ 39. Parameter Settings for User Entity Instance: MUX2in:inst109|lpm_mux:LPM_MUX_component
+ 40. Parameter Settings for User Entity Instance: MUX2in:inst11|lpm_mux:LPM_MUX_component
+ 41. Parameter Settings for User Entity Instance: MUX2in:inst65|lpm_mux:LPM_MUX_component
+ 42. Parameter Settings for User Entity Instance: MUX2in:inst167|lpm_mux:LPM_MUX_component
+ 43. Parameter Settings for User Entity Instance: lpm_ff1:inst97|lpm_ff:lpm_ff_component
+ 44. Parameter Settings for User Entity Instance: MUX2in:inst26|lpm_mux:LPM_MUX_component
+ 45. Parameter Settings for User Entity Instance: MUX2in:inst17|lpm_mux:LPM_MUX_component
+ 46. Parameter Settings for User Entity Instance: MUX2in:inst148|lpm_mux:LPM_MUX_component
+ 47. Parameter Settings for User Entity Instance: MUX2in:inst157|lpm_mux:LPM_MUX_component
+ 48. Parameter Settings for User Entity Instance: MUX2in:inst52|lpm_mux:LPM_MUX_component
+ 49. Parameter Settings for User Entity Instance: MUX2in:inst16|lpm_mux:LPM_MUX_component
+ 50. Parameter Settings for User Entity Instance: MUX2in:inst40|lpm_mux:LPM_MUX_component
+ 51. Parameter Settings for User Entity Instance: MUX2in:inst18|lpm_mux:LPM_MUX_component
+ 52. Parameter Settings for User Entity Instance: MUX2in:inst9|lpm_mux:LPM_MUX_component
+ 53. Parameter Settings for User Entity Instance: MUX2in:inst64|lpm_mux:LPM_MUX_component
+ 54. Parameter Settings for User Entity Instance: MUX2in:inst12|lpm_mux:LPM_MUX_component
+ 55. Parameter Settings for User Entity Instance: MUX2in:inst13|lpm_mux:LPM_MUX_component
+ 56. Parameter Settings for User Entity Instance: MUX2in:inst14|lpm_mux:LPM_MUX_component
+ 57. Parameter Settings for User Entity Instance: MUX2in:inst15|lpm_mux:LPM_MUX_component
+ 58. Parameter Settings for User Entity Instance: clk_sync_exchanger:inst104
+ 59. Parameter Settings for User Entity Instance: timing_aligner:inst111
+ 60. Parameter Settings for User Entity Instance: lpm_and_wrapper:inst86
+ 61. Parameter Settings for User Entity Instance: lpm_and_wrapper:inst86|lpm_and:lpm_and
+ 62. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Tue Sep 13 13:51:12 2016       ;
+; Quartus Prime Version       ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name               ; AVRX1400H                                   ;
+; Top-level Entity Name       ; AVRX1400H                                   ;
+; Family                      ; MAX V                                       ;
+; Total logic elements        ; 223                                         ;
+; Total pins                  ; 83                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; 5M570ZF256C5       ;                    ;
+; Top-level entity name                                                      ; AVRX1400H          ; AVRX1400H          ;
+; Family name                                                                ; MAX V              ; Cyclone V          ;
+; Optimization Technique                                                     ; Speed              ; Balanced           ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                       ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+---------+
+; rtl/bdf/AVRX1400H.bdf            ; yes             ; User Block Diagram/Schematic File  ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/bdf/AVRX1400H.bdf               ;         ;
+; rtl/VHDL/lpm_ff5.vhd             ; yes             ; User Wizard-Generated File         ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff5.vhd                ;         ;
+; rtl/VHDL/lpm_ff1.vhd             ; yes             ; User Wizard-Generated File         ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff1.vhd                ;         ;
+; rtl/verilog/ADCMCKSEL.v          ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADCMCKSEL.v             ;         ;
+; rtl/verilog/ADC_CLK_GEN.v        ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADC_CLK_GEN.v           ;         ;
+; rtl/verilog/ADC_FS_Manager.v     ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADC_FS_Manager.v        ;         ;
+; rtl/verilog/clk_sync_exchanger.v ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/clk_sync_exchanger.v    ;         ;
+; rtl/verilog/Delay1Cycle.v        ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/Delay1Cycle.v           ;         ;
+; rtl/verilog/DSDTDM_Ch_Div.v      ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/DSDTDM_Ch_Div.v         ;         ;
+; rtl/verilog/expander.v           ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/expander.v              ;         ;
+; rtl/verilog/LEGO_Workaround.v    ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/LEGO_Workaround.v       ;         ;
+; rtl/verilog/lpm_and_wrapper.v    ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/lpm_and_wrapper.v       ;         ;
+; rtl/verilog/timing_aligner.v     ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/timing_aligner.v        ;         ;
+; rtl/verilog/upcounter.v          ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/upcounter.v             ;         ;
+; mux2in.tdf                       ; yes             ; Auto-Found Wizard-Generated File   ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/megafunction/verilog/mux2in.tdf ;         ;
+; lpm_mux.inc                      ; yes             ; Auto-Found AHDL File               ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_mux.inc                                    ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_mux.tdf                                    ;         ;
+; aglobal160.inc                   ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/aglobal160.inc                                 ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/muxlut.inc                                     ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/bypassff.inc                                   ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altshift.inc                                   ;         ;
+; db/mux_i6c.tdf                   ; yes             ; Auto-Generated Megafunction        ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf                      ;         ;
+; lpm_ff.tdf                       ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_ff.tdf                                     ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_constant.inc                               ;         ;
+; lpm_and.tdf                      ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_and.tdf                                    ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Total logic elements                        ; 223        ;
+;     -- Combinational with no register       ; 89         ;
+;     -- Register only                        ; 70         ;
+;     -- Combinational with a register        ; 64         ;
+;                                             ;            ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 88         ;
+;     -- 3 input functions                    ; 23         ;
+;     -- 2 input functions                    ; 37         ;
+;     -- 1 input functions                    ; 5          ;
+;     -- 0 input functions                    ; 0          ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 201        ;
+;     -- arithmetic mode                      ; 22         ;
+;     -- qfbk mode                            ; 0          ;
+;     -- register cascade mode                ; 0          ;
+;     -- synchronous clear/load mode          ; 5          ;
+;     -- asynchronous clear/load mode         ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 134        ;
+; Total logic cells in carry chains           ; 26         ;
+; I/O pins                                    ; 83         ;
+; Maximum fan-out node                        ; SCLK_I2S_1 ;
+; Maximum fan-out                             ; 42         ;
+; Total fan-out                               ; 761        ;
+; Average fan-out                             ; 2.49       ;
++---------------------------------------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                            ;
++-------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------+-------------------------+--------------+
+; Compilation Hierarchy Node          ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                        ; Entity Name             ; Library Name ;
++-------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------+-------------------------+--------------+
+; |AVRX1400H                          ; 223 (47)    ; 134          ; 0          ; 83   ; 0            ; 89 (47)      ; 70 (0)            ; 64 (0)           ; 26 (0)          ; 0 (0)      ; |AVRX1400H                                                                 ; AVRX1400H               ; work         ;
+;    |ADC_CLK_GEN:inst63|             ; 10 (10)     ; 9            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 9 (9)            ; 8 (8)           ; 0 (0)      ; |AVRX1400H|ADC_CLK_GEN:inst63                                              ; ADC_CLK_GEN             ; work         ;
+;    |ADC_FS_Manager:inst206|         ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|ADC_FS_Manager:inst206                                          ; ADC_FS_Manager          ; work         ;
+;    |DSD_TDM_Channel_Divider:inst79| ; 95 (95)     ; 72           ; 0          ; 0    ; 0            ; 23 (23)      ; 34 (34)           ; 38 (38)          ; 5 (5)           ; 0 (0)      ; |AVRX1400H|DSD_TDM_Channel_Divider:inst79                                  ; DSD_TDM_Channel_Divider ; work         ;
+;    |Delay1Cycle:inst66|             ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|Delay1Cycle:inst66                                              ; Delay1Cycle             ; work         ;
+;    |LEGO_Workaround:inst211|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|LEGO_Workaround:inst211                                         ; LEGO_Workaround         ; work         ;
+;    |MUX2in:inst108|                 ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst108                                                  ; MUX2in                  ; work         ;
+;       |lpm_mux:LPM_MUX_component|   ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst108|lpm_mux:LPM_MUX_component                        ; lpm_mux                 ; work         ;
+;          |mux_i6c:auto_generated|   ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst108|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated ; mux_i6c                 ; work         ;
+;    |MUX2in:inst10|                  ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst10                                                   ; MUX2in                  ; work         ;
+;       |lpm_mux:LPM_MUX_component|   ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst10|lpm_mux:LPM_MUX_component                         ; lpm_mux                 ; work         ;
+;          |mux_i6c:auto_generated|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst10|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated  ; mux_i6c                 ; work         ;
+;    |MUX2in:inst156|                 ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst156                                                  ; MUX2in                  ; work         ;
+;       |lpm_mux:LPM_MUX_component|   ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst156|lpm_mux:LPM_MUX_component                        ; lpm_mux                 ; work         ;
+;          |mux_i6c:auto_generated|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst156|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated ; mux_i6c                 ; work         ;
+;    |MUX2in:inst164|                 ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst164                                                  ; MUX2in                  ; work         ;
+;       |lpm_mux:LPM_MUX_component|   ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst164|lpm_mux:LPM_MUX_component                        ; lpm_mux                 ; work         ;
+;          |mux_i6c:auto_generated|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst164|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated ; mux_i6c                 ; work         ;
+;    |MUX2in:inst165|                 ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst165                                                  ; MUX2in                  ; work         ;
+;       |lpm_mux:LPM_MUX_component|   ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst165|lpm_mux:LPM_MUX_component                        ; lpm_mux                 ; work         ;
+;          |mux_i6c:auto_generated|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst165|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated ; mux_i6c                 ; work         ;
+;    |MUX2in:inst210|                 ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst210                                                  ; MUX2in                  ; work         ;
+;       |lpm_mux:LPM_MUX_component|   ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst210|lpm_mux:LPM_MUX_component                        ; lpm_mux                 ; work         ;
+;          |mux_i6c:auto_generated|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst210|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated ; mux_i6c                 ; work         ;
+;    |MUX2in:inst214|                 ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst214                                                  ; MUX2in                  ; work         ;
+;       |lpm_mux:LPM_MUX_component|   ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst214|lpm_mux:LPM_MUX_component                        ; lpm_mux                 ; work         ;
+;          |mux_i6c:auto_generated|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst214|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated ; mux_i6c                 ; work         ;
+;    |MUX2in:inst215|                 ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst215                                                  ; MUX2in                  ; work         ;
+;       |lpm_mux:LPM_MUX_component|   ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst215|lpm_mux:LPM_MUX_component                        ; lpm_mux                 ; work         ;
+;          |mux_i6c:auto_generated|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst215|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated ; mux_i6c                 ; work         ;
+;    |MUX2in:inst35|                  ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst35                                                   ; MUX2in                  ; work         ;
+;       |lpm_mux:LPM_MUX_component|   ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst35|lpm_mux:LPM_MUX_component                         ; lpm_mux                 ; work         ;
+;          |mux_i6c:auto_generated|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst35|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated  ; mux_i6c                 ; work         ;
+;    |MUX2in:inst37|                  ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst37                                                   ; MUX2in                  ; work         ;
+;       |lpm_mux:LPM_MUX_component|   ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst37|lpm_mux:LPM_MUX_component                         ; lpm_mux                 ; work         ;
+;          |mux_i6c:auto_generated|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst37|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated  ; mux_i6c                 ; work         ;
+;    |MUX2in:inst72|                  ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst72                                                   ; MUX2in                  ; work         ;
+;       |lpm_mux:LPM_MUX_component|   ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst72|lpm_mux:LPM_MUX_component                         ; lpm_mux                 ; work         ;
+;          |mux_i6c:auto_generated|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst72|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated  ; mux_i6c                 ; work         ;
+;    |MUX2in:inst75|                  ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst75                                                   ; MUX2in                  ; work         ;
+;       |lpm_mux:LPM_MUX_component|   ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst75|lpm_mux:LPM_MUX_component                         ; lpm_mux                 ; work         ;
+;          |mux_i6c:auto_generated|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst75|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated  ; mux_i6c                 ; work         ;
+;    |MUX2in:inst76|                  ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst76                                                   ; MUX2in                  ; work         ;
+;       |lpm_mux:LPM_MUX_component|   ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst76|lpm_mux:LPM_MUX_component                         ; lpm_mux                 ; work         ;
+;          |mux_i6c:auto_generated|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst76|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated  ; mux_i6c                 ; work         ;
+;    |MUX2in:inst77|                  ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst77                                                   ; MUX2in                  ; work         ;
+;       |lpm_mux:LPM_MUX_component|   ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst77|lpm_mux:LPM_MUX_component                         ; lpm_mux                 ; work         ;
+;          |mux_i6c:auto_generated|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst77|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated  ; mux_i6c                 ; work         ;
+;    |MUX2in:inst88|                  ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst88                                                   ; MUX2in                  ; work         ;
+;       |lpm_mux:LPM_MUX_component|   ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst88|lpm_mux:LPM_MUX_component                         ; lpm_mux                 ; work         ;
+;          |mux_i6c:auto_generated|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|MUX2in:inst88|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated  ; mux_i6c                 ; work         ;
+;    |expander:inst141|               ; 30 (30)     ; 30           ; 0          ; 0    ; 0            ; 0 (0)        ; 30 (30)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|expander:inst141                                                ; expander                ; work         ;
+;    |lpm_ff1:inst97|                 ; 1 (0)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|lpm_ff1:inst97                                                  ; lpm_ff1                 ; work         ;
+;       |lpm_ff:lpm_ff_component|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|lpm_ff1:inst97|lpm_ff:lpm_ff_component                          ; lpm_ff                  ; work         ;
+;    |lpm_ff5:inst25|                 ; 1 (0)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|lpm_ff5:inst25                                                  ; lpm_ff5                 ; work         ;
+;       |lpm_ff:lpm_ff_component|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|lpm_ff5:inst25|lpm_ff:lpm_ff_component                          ; lpm_ff                  ; work         ;
+;    |lpm_ff5:inst29|                 ; 1 (0)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|lpm_ff5:inst29                                                  ; lpm_ff5                 ; work         ;
+;       |lpm_ff:lpm_ff_component|     ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|lpm_ff5:inst29|lpm_ff:lpm_ff_component                          ; lpm_ff                  ; work         ;
+;    |upcounter:inst134|              ; 6 (6)       ; 6            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 6 (6)            ; 5 (5)           ; 0 (0)      ; |AVRX1400H|upcounter:inst134                                               ; upcounter               ; work         ;
+;    |upcounter:inst19|               ; 9 (9)       ; 9            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 9 (9)            ; 8 (8)           ; 0 (0)      ; |AVRX1400H|upcounter:inst19                                                ; upcounter               ; work         ;
++-------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------+-------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 134   ;
+; Number of registers using Synchronous Clear  ; 5     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 16    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (No Restructuring Performed)                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |AVRX1400H|DSD_TDM_Channel_Divider:inst79|Ch1_TxReg[0]  ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |AVRX1400H|DSD_TDM_Channel_Divider:inst79|Ch0_TxReg[15] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst210|lpm_mux:LPM_MUX_component ;
++------------------------+---------+----------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                               ;
++------------------------+---------+----------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                     ;
+; LPM_WIDTH              ; 1       ; Untyped                                            ;
+; LPM_SIZE               ; 2       ; Untyped                                            ;
+; LPM_WIDTHS             ; 1       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0       ; Untyped                                            ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                            ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                            ;
++------------------------+---------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: expander:inst141 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; width          ; 16    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst149|lpm_mux:LPM_MUX_component ;
++------------------------+---------+----------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                               ;
++------------------------+---------+----------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                     ;
+; LPM_WIDTH              ; 1       ; Untyped                                            ;
+; LPM_SIZE               ; 2       ; Untyped                                            ;
+; LPM_WIDTHS             ; 1       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0       ; Untyped                                            ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                            ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                            ;
++------------------------+---------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst158|lpm_mux:LPM_MUX_component ;
++------------------------+---------+----------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                               ;
++------------------------+---------+----------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                     ;
+; LPM_WIDTH              ; 1       ; Untyped                                            ;
+; LPM_SIZE               ; 2       ; Untyped                                            ;
+; LPM_WIDTHS             ; 1       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0       ; Untyped                                            ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                            ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                            ;
++------------------------+---------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst57|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst35|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst89|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst75|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst76|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst77|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst214|lpm_mux:LPM_MUX_component ;
++------------------------+---------+----------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                               ;
++------------------------+---------+----------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                     ;
+; LPM_WIDTH              ; 1       ; Untyped                                            ;
+; LPM_SIZE               ; 2       ; Untyped                                            ;
+; LPM_WIDTHS             ; 1       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0       ; Untyped                                            ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                            ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                            ;
++------------------------+---------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst156|lpm_mux:LPM_MUX_component ;
++------------------------+---------+----------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                               ;
++------------------------+---------+----------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                     ;
+; LPM_WIDTH              ; 1       ; Untyped                                            ;
+; LPM_SIZE               ; 2       ; Untyped                                            ;
+; LPM_WIDTHS             ; 1       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0       ; Untyped                                            ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                            ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                            ;
++------------------------+---------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst37|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: upcounter:inst19 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; width          ; 9     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff5:inst25|lpm_ff:lpm_ff_component ;
++------------------------+---------+--------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                             ;
++------------------------+---------+--------------------------------------------------+
+; LPM_WIDTH              ; 1       ; Signed Integer                                   ;
+; LPM_AVALUE             ; UNUSED  ; Untyped                                          ;
+; LPM_SVALUE             ; UNUSED  ; Untyped                                          ;
+; LPM_FFTYPE             ; DFF     ; Untyped                                          ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                          ;
+; CBXI_PARAMETER         ; NOTHING ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                   ;
++------------------------+---------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst164|lpm_mux:LPM_MUX_component ;
++------------------------+---------+----------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                               ;
++------------------------+---------+----------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                     ;
+; LPM_WIDTH              ; 1       ; Untyped                                            ;
+; LPM_SIZE               ; 2       ; Untyped                                            ;
+; LPM_WIDTHS             ; 1       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0       ; Untyped                                            ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                            ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                            ;
++------------------------+---------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst165|lpm_mux:LPM_MUX_component ;
++------------------------+---------+----------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                               ;
++------------------------+---------+----------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                     ;
+; LPM_WIDTH              ; 1       ; Untyped                                            ;
+; LPM_SIZE               ; 2       ; Untyped                                            ;
+; LPM_WIDTHS             ; 1       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0       ; Untyped                                            ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                            ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                            ;
++------------------------+---------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: upcounter:inst134 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; width          ; 6     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst72|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst73|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DSD_TDM_Channel_Divider:inst79 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; Ch_Width       ; 16    ; Signed Integer                                     ;
+; Frame_Width    ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst10|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst88|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff5:inst29|lpm_ff:lpm_ff_component ;
++------------------------+---------+--------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                             ;
++------------------------+---------+--------------------------------------------------+
+; LPM_WIDTH              ; 1       ; Signed Integer                                   ;
+; LPM_AVALUE             ; UNUSED  ; Untyped                                          ;
+; LPM_SVALUE             ; UNUSED  ; Untyped                                          ;
+; LPM_FFTYPE             ; DFF     ; Untyped                                          ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                          ;
+; CBXI_PARAMETER         ; NOTHING ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                   ;
++------------------------+---------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst215|lpm_mux:LPM_MUX_component ;
++------------------------+---------+----------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                               ;
++------------------------+---------+----------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                     ;
+; LPM_WIDTH              ; 1       ; Untyped                                            ;
+; LPM_SIZE               ; 2       ; Untyped                                            ;
+; LPM_WIDTHS             ; 1       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0       ; Untyped                                            ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                            ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                            ;
++------------------------+---------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst155|lpm_mux:LPM_MUX_component ;
++------------------------+---------+----------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                               ;
++------------------------+---------+----------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                     ;
+; LPM_WIDTH              ; 1       ; Untyped                                            ;
+; LPM_SIZE               ; 2       ; Untyped                                            ;
+; LPM_WIDTHS             ; 1       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0       ; Untyped                                            ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                            ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                            ;
++------------------------+---------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst36|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst69|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst108|lpm_mux:LPM_MUX_component ;
++------------------------+---------+----------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                               ;
++------------------------+---------+----------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                     ;
+; LPM_WIDTH              ; 1       ; Untyped                                            ;
+; LPM_SIZE               ; 2       ; Untyped                                            ;
+; LPM_WIDTHS             ; 1       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0       ; Untyped                                            ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                            ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                            ;
++------------------------+---------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst109|lpm_mux:LPM_MUX_component ;
++------------------------+---------+----------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                               ;
++------------------------+---------+----------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                     ;
+; LPM_WIDTH              ; 1       ; Untyped                                            ;
+; LPM_SIZE               ; 2       ; Untyped                                            ;
+; LPM_WIDTHS             ; 1       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0       ; Untyped                                            ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                            ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                            ;
++------------------------+---------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst11|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst65|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst167|lpm_mux:LPM_MUX_component ;
++------------------------+---------+----------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                               ;
++------------------------+---------+----------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                     ;
+; LPM_WIDTH              ; 1       ; Untyped                                            ;
+; LPM_SIZE               ; 2       ; Untyped                                            ;
+; LPM_WIDTHS             ; 1       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0       ; Untyped                                            ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                            ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                            ;
++------------------------+---------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff1:inst97|lpm_ff:lpm_ff_component ;
++------------------------+---------+--------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                             ;
++------------------------+---------+--------------------------------------------------+
+; LPM_WIDTH              ; 1       ; Signed Integer                                   ;
+; LPM_AVALUE             ; UNUSED  ; Untyped                                          ;
+; LPM_SVALUE             ; UNUSED  ; Untyped                                          ;
+; LPM_FFTYPE             ; DFF     ; Untyped                                          ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                          ;
+; CBXI_PARAMETER         ; NOTHING ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                   ;
++------------------------+---------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst26|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst17|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst148|lpm_mux:LPM_MUX_component ;
++------------------------+---------+----------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                               ;
++------------------------+---------+----------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                     ;
+; LPM_WIDTH              ; 1       ; Untyped                                            ;
+; LPM_SIZE               ; 2       ; Untyped                                            ;
+; LPM_WIDTHS             ; 1       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0       ; Untyped                                            ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                            ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                            ;
++------------------------+---------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst157|lpm_mux:LPM_MUX_component ;
++------------------------+---------+----------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                               ;
++------------------------+---------+----------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                     ;
+; LPM_WIDTH              ; 1       ; Untyped                                            ;
+; LPM_SIZE               ; 2       ; Untyped                                            ;
+; LPM_WIDTHS             ; 1       ; Untyped                                            ;
+; LPM_PIPELINE           ; 0       ; Untyped                                            ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                            ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                            ;
++------------------------+---------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst52|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst16|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst40|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst18|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst9|lpm_mux:LPM_MUX_component ;
++------------------------+---------+--------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                             ;
++------------------------+---------+--------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                   ;
+; LPM_WIDTH              ; 1       ; Untyped                                          ;
+; LPM_SIZE               ; 2       ; Untyped                                          ;
+; LPM_WIDTHS             ; 1       ; Untyped                                          ;
+; LPM_PIPELINE           ; 0       ; Untyped                                          ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                          ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                          ;
++------------------------+---------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst64|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst12|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst13|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst14|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2in:inst15|lpm_mux:LPM_MUX_component ;
++------------------------+---------+---------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                              ;
++------------------------+---------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1       ; Untyped                                           ;
+; LPM_SIZE               ; 2       ; Untyped                                           ;
+; LPM_WIDTHS             ; 1       ; Untyped                                           ;
+; LPM_PIPELINE           ; 0       ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
++------------------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clk_sync_exchanger:inst104 ;
++--------------------------+-------+--------------------------------------+
+; Parameter Name           ; Value ; Type                                 ;
++--------------------------+-------+--------------------------------------+
+; USE_MUTE_BCK_AND_LRCK    ; no    ; String                               ;
+; clk_mute_delay_cnt_width ; 10    ; Signed Integer                       ;
++--------------------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: timing_aligner:inst111 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; launchedge     ; 1     ; Signed Integer                             ;
+; latchedge      ; 0     ; Signed Integer                             ;
+; width          ; 1     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_and_wrapper:inst86 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; width          ; 1     ; Untyped                                    ;
+; size           ; 16    ; Untyped                                    ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_and_wrapper:inst86|lpm_and:lpm_and ;
++------------------------+--------+---------------------------------------------------+
+; Parameter Name         ; Value  ; Type                                              ;
++------------------------+--------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON     ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF    ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON     ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF    ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 1      ; Signed Integer                                    ;
+; LPM_SIZE               ; 16     ; Signed Integer                                    ;
+; CARRY_CHAIN_LENGTH     ; 48     ; CARRY_CHAIN_LENGTH                                ;
+; CARRY_CHAIN            ; MANUAL ; Untyped                                           ;
+; CASCADE_CHAIN          ; MANUAL ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX V  ; Untyped                                           ;
++------------------------+--------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+    Info: Processing started: Tue Sep 13 13:50:52 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AVR1911Digital -c AVRX1400H
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/bdf/avrx1400h.bdf
+    Info (12023): Found entity 1: AVRX1400H
+Info (12021): Found 2 design units, including 1 entities, in source file rtl/vhdl/lpm_ff5.vhd
+    Info (12022): Found design unit 1: lpm_ff5-SYN File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff5.vhd Line: 52
+    Info (12023): Found entity 1: lpm_ff5 File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff5.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file rtl/vhdl/lpm_ff1.vhd
+    Info (12022): Found design unit 1: lpm_ff1-SYN File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff1.vhd Line: 52
+    Info (12023): Found entity 1: lpm_ff1 File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff1.vhd Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/adcmcksel.v
+    Info (12023): Found entity 1: ADCMCKSEL File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADCMCKSEL.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/adc_clk_gen.v
+    Info (12023): Found entity 1: ADC_CLK_GEN File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADC_CLK_GEN.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/adc_fs_manager.v
+    Info (12023): Found entity 1: ADC_FS_Manager File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADC_FS_Manager.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/clk_sync_exchanger.v
+    Info (12023): Found entity 1: clk_sync_exchanger File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/clk_sync_exchanger.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/delay1cycle.v
+    Info (12023): Found entity 1: Delay1Cycle File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/Delay1Cycle.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/dsdtdm_ch_div.v
+    Info (12023): Found entity 1: DSD_TDM_Channel_Divider File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/DSDTDM_Ch_Div.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/expander.v
+    Info (12023): Found entity 1: expander File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/expander.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/lego_workaround.v
+    Info (12023): Found entity 1: LEGO_Workaround File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/LEGO_Workaround.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/lpm_and_wrapper.v
+    Info (12023): Found entity 1: lpm_and_wrapper File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/lpm_and_wrapper.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/timing_aligner.v
+    Info (12023): Found entity 1: timing_aligner File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/timing_aligner.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/upcounter.v
+    Info (12023): Found entity 1: upcounter File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/upcounter.v Line: 1
+Info (12127): Elaborating entity "AVRX1400H" for the top level hierarchy
+Warning (275006): Can't find a definition for parameter AVRX1400HAudioPLD -- assuming Ver. 60.00   31-Aug'-2016 was intended to be a quoted string
+Warning (275009): Pin "SLRCK" not connected
+Warning (275009): Pin "SBCK" not connected
+Warning (275009): Pin "GPIO_2" not connected
+Warning (275009): Pin "PLDERR2" not connected
+Warning (275009): Pin "SDOUT_I2S_2" not connected
+Warning (12125): Using design file rtl/megafunction/verilog/mux2in.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: MUX2in File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/megafunction/verilog/mux2in.tdf Line: 40
+Info (12128): Elaborating entity "MUX2in" for hierarchy "MUX2in:inst210"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "MUX2in:inst210|lpm_mux:LPM_MUX_component" File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/megafunction/verilog/mux2in.tdf Line: 50
+Info (12130): Elaborated megafunction instantiation "MUX2in:inst210|lpm_mux:LPM_MUX_component" File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/megafunction/verilog/mux2in.tdf Line: 50
+Info (12133): Instantiated megafunction "MUX2in:inst210|lpm_mux:LPM_MUX_component" with the following parameter: File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/megafunction/verilog/mux2in.tdf Line: 50
+    Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
+    Info (12134): Parameter "LPM_WIDTH" = "1"
+    Info (12134): Parameter "LPM_SIZE" = "2"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_i6c.tdf
+    Info (12023): Found entity 1: mux_i6c File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 23
+Info (12128): Elaborating entity "mux_i6c" for hierarchy "MUX2in:inst210|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated" File: c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+Info (12128): Elaborating entity "expander" for hierarchy "expander:inst141"
+Info (12128): Elaborating entity "MUX2in" for hierarchy "MUX2in:inst75"
+Info (12128): Elaborating entity "ADC_CLK_GEN" for hierarchy "ADC_CLK_GEN:inst63"
+Info (12128): Elaborating entity "ADC_FS_Manager" for hierarchy "ADC_FS_Manager:inst206"
+Info (12128): Elaborating entity "upcounter" for hierarchy "upcounter:inst19"
+Info (12128): Elaborating entity "lpm_ff5" for hierarchy "lpm_ff5:inst25"
+Info (12128): Elaborating entity "lpm_ff" for hierarchy "lpm_ff5:inst25|lpm_ff:lpm_ff_component" File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff5.vhd Line: 80
+Info (12130): Elaborated megafunction instantiation "lpm_ff5:inst25|lpm_ff:lpm_ff_component" File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff5.vhd Line: 80
+Info (12133): Instantiated megafunction "lpm_ff5:inst25|lpm_ff:lpm_ff_component" with the following parameter: File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff5.vhd Line: 80
+    Info (12134): Parameter "lpm_fftype" = "DFF"
+    Info (12134): Parameter "lpm_type" = "LPM_FF"
+    Info (12134): Parameter "lpm_width" = "1"
+Info (12128): Elaborating entity "upcounter" for hierarchy "upcounter:inst134"
+Info (12128): Elaborating entity "MUX2in" for hierarchy "MUX2in:inst73"
+Info (12128): Elaborating entity "DSD_TDM_Channel_Divider" for hierarchy "DSD_TDM_Channel_Divider:inst79"
+Info (12128): Elaborating entity "LEGO_Workaround" for hierarchy "LEGO_Workaround:inst211"
+Info (12128): Elaborating entity "Delay1Cycle" for hierarchy "Delay1Cycle:inst66"
+Info (12128): Elaborating entity "lpm_ff1" for hierarchy "lpm_ff1:inst97"
+Info (12128): Elaborating entity "ADCMCKSEL" for hierarchy "ADCMCKSEL:inst102"
+Info (12128): Elaborating entity "clk_sync_exchanger" for hierarchy "clk_sync_exchanger:inst104"
+Info (12128): Elaborating entity "timing_aligner" for hierarchy "timing_aligner:inst111"
+Info (12128): Elaborating entity "lpm_and_wrapper" for hierarchy "lpm_and_wrapper:inst86"
+Info (12128): Elaborating entity "lpm_and" for hierarchy "lpm_and_wrapper:inst86|lpm_and:lpm_and" File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/lpm_and_wrapper.v Line: 26
+Info (12130): Elaborated megafunction instantiation "lpm_and_wrapper:inst86|lpm_and:lpm_and" File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/lpm_and_wrapper.v Line: 26
+Info (12133): Instantiated megafunction "lpm_and_wrapper:inst86|lpm_and:lpm_and" with the following parameter: File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/lpm_and_wrapper.v Line: 26
+    Info (12134): Parameter "lpm_width" = "1"
+    Info (12134): Parameter "lpm_size" = "16"
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer ADC_CLK_GEN:inst63|LRCK_out File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADC_CLK_GEN.v Line: 5
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer MUX2in:inst72|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
+    Warning (19017): Found clock multiplexer MUX2in:inst156|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
+    Warning (19017): Found clock multiplexer MUX2in:inst37|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
+    Warning (19017): Found clock multiplexer MUX2in:inst164|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
+    Warning (19017): Found clock multiplexer MUX2in:inst165|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
+    Warning (19017): Found clock multiplexer MUX2in:inst10|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
+    Warning (19017): Found clock multiplexer MUX2in:inst88|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "DSP1IN_/SW" is stuck at GND
+Info (17016): Found the following redundant logic cells in design
+    Info (17048): Logic cell "inst21"
+Warning (21074): Design contains 7 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "OSC22M"
+    Warning (15610): No output dependent on input pin "GPIO_1"
+    Warning (15610): No output dependent on input pin "SLRCK"
+    Warning (15610): No output dependent on input pin "SBCK"
+    Warning (15610): No output dependent on input pin "GPIO_2"
+    Warning (15610): No output dependent on input pin "PLDERR2"
+    Warning (15610): No output dependent on input pin "SDOUT_I2S_2"
+Info (21057): Implemented 306 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 46 input pins
+    Info (21059): Implemented 37 output pins
+    Info (21061): Implemented 223 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 28 warnings
+    Info: Peak virtual memory: 835 megabytes
+    Info: Processing ended: Tue Sep 13 13:51:12 2016
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:41
+
+

@@ -1,0 +1,485 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'LEGOBCK_DSD128_0'
+Slack : 4.543
+TNS   : 0.000
+
+Type  : Slow Model Setup 'DACBCK_LEGOBCK_192K'
+Slack : 14.355
+TNS   : 0.000
+
+Type  : Slow Model Setup 'LEGOBCK_DSD128TDM'
+Slack : 23.001
+TNS   : 0.000
+
+Type  : Slow Model Setup 'DACBCK_DSP1OUTBCK_192K'
+Slack : 24.110
+TNS   : 0.000
+
+Type  : Slow Model Setup 'Z2DACBCK_LEGOBCK_192K'
+Slack : 29.822
+TNS   : 0.000
+
+Type  : Slow Model Setup 'DIRXMCK'
+Slack : 29.872
+TNS   : 0.000
+
+Type  : Slow Model Setup 'LEGOBCK_192K'
+Slack : 74.057
+TNS   : 0.000
+
+Type  : Slow Model Setup 'SPICLK'
+Slack : 906.709
+TNS   : 0.000
+
+Type  : Slow Model Setup 'SPICS'
+Slack : 984.943
+TNS   : 0.000
+
+Type  : Slow Model Setup 'DIRLRCK_192K'
+Slack : 5187.986
+TNS   : 0.000
+
+Type  : Slow Model Hold 'SPICLK'
+Slack : 3.105
+TNS   : 0.000
+
+Type  : Slow Model Hold 'LEGOBCK_DSD128TDM'
+Slack : 3.179
+TNS   : 0.000
+
+Type  : Slow Model Hold 'DIRXMCK'
+Slack : 3.351
+TNS   : 0.000
+
+Type  : Slow Model Hold 'LEGOBCK_DSD128_0'
+Slack : 3.354
+TNS   : 0.000
+
+Type  : Slow Model Hold 'LEGOBCK_192K'
+Slack : 3.389
+TNS   : 0.000
+
+Type  : Slow Model Hold 'SPICS'
+Slack : 5.619
+TNS   : 0.000
+
+Type  : Slow Model Hold 'DIRLRCK_192K'
+Slack : 19.654
+TNS   : 0.000
+
+Type  : Slow Model Hold 'Z2DACBCK_LEGOBCK_192K'
+Slack : 28.742
+TNS   : 0.000
+
+Type  : Slow Model Hold 'DACBCK_DSP1OUTBCK_192K'
+Slack : 30.170
+TNS   : 0.000
+
+Type  : Slow Model Hold 'DACBCK_LEGOBCK_192K'
+Slack : 51.025
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'DIRXMCK'
+Slack : 20.006
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'LEGOBCK_192K'
+Slack : 40.351
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'DIRBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'DSP1OUTBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'HDMIBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'MUXED_DACBCK_DIRBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'MUXED_DACBCK_DSP1OUTBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'MUXED_DACBCK_HDMIBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'MUXED_DACBCK_LEGOBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'MUXED_DSP1IN_DIRBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'MUXED_DSP1IN_HDMIBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'MUXED_DSP1IN_LEGOBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'LEGOBCK_DSD128TDM'
+Slack : 43.961
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'DACBCK_DIRBCK_192K'
+Slack : 78.091
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'DACBCK_DSP1OUTBCK_192K'
+Slack : 78.091
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'DACBCK_HDMIBCK_192K'
+Slack : 78.091
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'DACBCK_LEGOBCK_192K'
+Slack : 78.091
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'DSP1IN_DIRBCK_192K'
+Slack : 78.091
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'DSP1IN_HDMIBCK_192K'
+Slack : 78.091
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'DSP1IN_LEGOBCK_192K'
+Slack : 78.091
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'TXBCK_192K'
+Slack : 78.091
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'Z2DACBCK_LEGOBCK_192K'
+Slack : 78.091
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'GEN_PLDADCBCK_96K'
+Slack : 81.380
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'MUXED_DACBCK_PLDADCBCK_96K'
+Slack : 81.380
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'MUXED_DSP1IN_PLDADCBCK_96K'
+Slack : 81.380
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'LEGOBCK_DSD128'
+Slack : 88.261
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'LEGOBCK_DSD128_0'
+Slack : 88.261
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'MUXED_DACBCK_LEGOBCK_DSD128'
+Slack : 88.600
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'MUXED_DSP1IN_LEGOBCK_DSD128'
+Slack : 88.600
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'DACBCK_PLDADCBCK_96K'
+Slack : 159.471
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'DSP1IN_PLDADCBCK_96K'
+Slack : 159.471
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'PLDADCBCK_96K'
+Slack : 159.471
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'Z2ADCBCK_48K'
+Slack : 162.760
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'DACBCK_LEGOBCK_DSD128'
+Slack : 173.911
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'DSP1IN_LEGOBCK_DSD128'
+Slack : 173.911
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'NETI2S2IN48K'
+Slack : 322.231
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'SPICLK'
+Slack : 499.661
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'DIRLRCK_192K'
+Slack : 2603.661
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'DSP1OUTLRCK_192K'
+Slack : 2603.661
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'SPICS'
+Slack : 23999.661
+TNS   : 0.000
+
+Type  : Fast Model Setup 'DACBCK_DSP1OUTBCK_192K'
+Slack : 22.883
+TNS   : 0.000
+
+Type  : Fast Model Setup 'DACBCK_LEGOBCK_192K'
+Slack : 26.261
+TNS   : 0.000
+
+Type  : Fast Model Setup 'Z2DACBCK_LEGOBCK_192K'
+Slack : 27.407
+TNS   : 0.000
+
+Type  : Fast Model Setup 'LEGOBCK_DSD128TDM'
+Slack : 34.814
+TNS   : 0.000
+
+Type  : Fast Model Setup 'LEGOBCK_DSD128_0'
+Slack : 35.617
+TNS   : 0.000
+
+Type  : Fast Model Setup 'DIRXMCK'
+Slack : 37.556
+TNS   : 0.000
+
+Type  : Fast Model Setup 'LEGOBCK_192K'
+Slack : 79.186
+TNS   : 0.000
+
+Type  : Fast Model Setup 'SPICLK'
+Slack : 901.435
+TNS   : 0.000
+
+Type  : Fast Model Setup 'SPICS'
+Slack : 996.417
+TNS   : 0.000
+
+Type  : Fast Model Setup 'DIRLRCK_192K'
+Slack : 5203.064
+TNS   : 0.000
+
+Type  : Fast Model Hold 'SPICLK'
+Slack : 0.692
+TNS   : 0.000
+
+Type  : Fast Model Hold 'LEGOBCK_DSD128TDM'
+Slack : 0.730
+TNS   : 0.000
+
+Type  : Fast Model Hold 'DIRXMCK'
+Slack : 0.848
+TNS   : 0.000
+
+Type  : Fast Model Hold 'LEGOBCK_DSD128_0'
+Slack : 0.852
+TNS   : 0.000
+
+Type  : Fast Model Hold 'LEGOBCK_192K'
+Slack : 0.865
+TNS   : 0.000
+
+Type  : Fast Model Hold 'SPICS'
+Slack : 1.397
+TNS   : 0.000
+
+Type  : Fast Model Hold 'DIRLRCK_192K'
+Slack : 4.597
+TNS   : 0.000
+
+Type  : Fast Model Hold 'Z2DACBCK_LEGOBCK_192K'
+Slack : 31.818
+TNS   : 0.000
+
+Type  : Fast Model Hold 'DACBCK_DSP1OUTBCK_192K'
+Slack : 34.636
+TNS   : 0.000
+
+Type  : Fast Model Hold 'DACBCK_LEGOBCK_192K'
+Slack : 39.119
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'DIRXMCK'
+Slack : 20.189
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'LEGOBCK_192K'
+Slack : 40.534
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'DIRBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'DSP1OUTBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'HDMIBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'MUXED_DACBCK_DIRBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'MUXED_DACBCK_DSP1OUTBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'MUXED_DACBCK_HDMIBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'MUXED_DACBCK_LEGOBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'MUXED_DSP1IN_DIRBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'MUXED_DSP1IN_HDMIBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'MUXED_DSP1IN_LEGOBCK_192K'
+Slack : 40.690
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'LEGOBCK_DSD128TDM'
+Slack : 44.144
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'DACBCK_DIRBCK_192K'
+Slack : 78.091
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'DACBCK_DSP1OUTBCK_192K'
+Slack : 78.091
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'DACBCK_HDMIBCK_192K'
+Slack : 78.091
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'DACBCK_LEGOBCK_192K'
+Slack : 78.091
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'DSP1IN_DIRBCK_192K'
+Slack : 78.091
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'DSP1IN_HDMIBCK_192K'
+Slack : 78.091
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'DSP1IN_LEGOBCK_192K'
+Slack : 78.091
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'TXBCK_192K'
+Slack : 78.091
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Z2DACBCK_LEGOBCK_192K'
+Slack : 78.091
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'GEN_PLDADCBCK_96K'
+Slack : 81.380
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'MUXED_DACBCK_PLDADCBCK_96K'
+Slack : 81.380
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'MUXED_DSP1IN_PLDADCBCK_96K'
+Slack : 81.380
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'LEGOBCK_DSD128'
+Slack : 88.444
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'LEGOBCK_DSD128_0'
+Slack : 88.444
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'MUXED_DACBCK_LEGOBCK_DSD128'
+Slack : 88.600
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'MUXED_DSP1IN_LEGOBCK_DSD128'
+Slack : 88.600
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'DACBCK_PLDADCBCK_96K'
+Slack : 159.471
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'DSP1IN_PLDADCBCK_96K'
+Slack : 159.471
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'PLDADCBCK_96K'
+Slack : 159.471
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Z2ADCBCK_48K'
+Slack : 162.760
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'DACBCK_LEGOBCK_DSD128'
+Slack : 173.911
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'DSP1IN_LEGOBCK_DSD128'
+Slack : 173.911
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'NETI2S2IN48K'
+Slack : 322.231
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'SPICLK'
+Slack : 499.844
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'DIRLRCK_192K'
+Slack : 2603.844
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'DSP1OUTLRCK_192K'
+Slack : 2603.844
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'SPICS'
+Slack : 23999.844
+TNS   : 0.000
+
+------------------------------------------------------------
