@@ -1,5 +1,5 @@
 Restore Archived Project report for AVRX1400H
-Wed Sep 14 10:10:05 2016
+Thu Sep 29 09:47:19 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------------+
 ; Restore Archived Project Summary                                        ;
 +---------------------------------+---------------------------------------+
-; Restore Archived Project Status ; Successful - Wed Sep 14 10:10:05 2016 ;
+; Restore Archived Project Status ; Successful - Thu Sep 29 09:47:19 2016 ;
 ; Revision Name                   ; AVRX1400H                             ;
 ; Top-level Entity Name           ; AVRX1400H                             ;
 ; Family                          ; MAX V                                 ;
@@ -47,13 +47,13 @@ agreement for further details.
 +-----------------------------------+
 ; Restore Archived Project Messages ;
 +-----------------------------------+
-Info: Successfully restored 'F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx.qar' into the 'F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/' directory
+Info: Successfully restored 'C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx.qar' into the 'C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/' directory
 Info: Generated report 'AVRX1400H.restore.rpt'
 Info (23030): Evaluation of Tcl script c:/altera_lite/16.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 22 warnings
-    Info: Peak virtual memory: 526 megabytes
-    Info: Processing ended: Wed Sep 14 10:10:05 2016
-    Info: Elapsed time: 00:00:04
+    Info: Peak virtual memory: 528 megabytes
+    Info: Processing ended: Thu Sep 29 09:47:19 2016
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 
