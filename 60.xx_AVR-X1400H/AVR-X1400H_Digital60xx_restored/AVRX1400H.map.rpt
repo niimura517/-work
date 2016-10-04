@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AVRX1400H
-Tue Sep 13 13:51:12 2016
+Tue Oct 04 18:11:03 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -49,25 +49,23 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
  41. Parameter Settings for User Entity Instance: MUX2in:inst65|lpm_mux:LPM_MUX_component
  42. Parameter Settings for User Entity Instance: MUX2in:inst167|lpm_mux:LPM_MUX_component
  43. Parameter Settings for User Entity Instance: lpm_ff1:inst97|lpm_ff:lpm_ff_component
- 44. Parameter Settings for User Entity Instance: MUX2in:inst26|lpm_mux:LPM_MUX_component
- 45. Parameter Settings for User Entity Instance: MUX2in:inst17|lpm_mux:LPM_MUX_component
- 46. Parameter Settings for User Entity Instance: MUX2in:inst148|lpm_mux:LPM_MUX_component
- 47. Parameter Settings for User Entity Instance: MUX2in:inst157|lpm_mux:LPM_MUX_component
- 48. Parameter Settings for User Entity Instance: MUX2in:inst52|lpm_mux:LPM_MUX_component
- 49. Parameter Settings for User Entity Instance: MUX2in:inst16|lpm_mux:LPM_MUX_component
- 50. Parameter Settings for User Entity Instance: MUX2in:inst40|lpm_mux:LPM_MUX_component
- 51. Parameter Settings for User Entity Instance: MUX2in:inst18|lpm_mux:LPM_MUX_component
- 52. Parameter Settings for User Entity Instance: MUX2in:inst9|lpm_mux:LPM_MUX_component
- 53. Parameter Settings for User Entity Instance: MUX2in:inst64|lpm_mux:LPM_MUX_component
- 54. Parameter Settings for User Entity Instance: MUX2in:inst12|lpm_mux:LPM_MUX_component
- 55. Parameter Settings for User Entity Instance: MUX2in:inst13|lpm_mux:LPM_MUX_component
- 56. Parameter Settings for User Entity Instance: MUX2in:inst14|lpm_mux:LPM_MUX_component
- 57. Parameter Settings for User Entity Instance: MUX2in:inst15|lpm_mux:LPM_MUX_component
- 58. Parameter Settings for User Entity Instance: clk_sync_exchanger:inst104
- 59. Parameter Settings for User Entity Instance: timing_aligner:inst111
- 60. Parameter Settings for User Entity Instance: lpm_and_wrapper:inst86
- 61. Parameter Settings for User Entity Instance: lpm_and_wrapper:inst86|lpm_and:lpm_and
- 62. Analysis & Synthesis Messages
+ 44. Parameter Settings for User Entity Instance: MUX2in:inst148|lpm_mux:LPM_MUX_component
+ 45. Parameter Settings for User Entity Instance: MUX2in:inst157|lpm_mux:LPM_MUX_component
+ 46. Parameter Settings for User Entity Instance: MUX2in:inst52|lpm_mux:LPM_MUX_component
+ 47. Parameter Settings for User Entity Instance: MUX2in:inst16|lpm_mux:LPM_MUX_component
+ 48. Parameter Settings for User Entity Instance: MUX2in:inst40|lpm_mux:LPM_MUX_component
+ 49. Parameter Settings for User Entity Instance: MUX2in:inst18|lpm_mux:LPM_MUX_component
+ 50. Parameter Settings for User Entity Instance: MUX2in:inst9|lpm_mux:LPM_MUX_component
+ 51. Parameter Settings for User Entity Instance: MUX2in:inst64|lpm_mux:LPM_MUX_component
+ 52. Parameter Settings for User Entity Instance: MUX2in:inst12|lpm_mux:LPM_MUX_component
+ 53. Parameter Settings for User Entity Instance: MUX2in:inst13|lpm_mux:LPM_MUX_component
+ 54. Parameter Settings for User Entity Instance: MUX2in:inst14|lpm_mux:LPM_MUX_component
+ 55. Parameter Settings for User Entity Instance: MUX2in:inst15|lpm_mux:LPM_MUX_component
+ 56. Parameter Settings for User Entity Instance: clk_sync_exchanger:inst104
+ 57. Parameter Settings for User Entity Instance: timing_aligner:inst111
+ 58. Parameter Settings for User Entity Instance: lpm_and_wrapper:inst86
+ 59. Parameter Settings for User Entity Instance: lpm_and_wrapper:inst86|lpm_and:lpm_and
+ 60. Analysis & Synthesis Messages
 
 
 
@@ -94,12 +92,12 @@ agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue Sep 13 13:51:12 2016       ;
+; Analysis & Synthesis Status ; Successful - Tue Oct 04 18:11:03 2016       ;
 ; Quartus Prime Version       ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name               ; AVRX1400H                                   ;
 ; Top-level Entity Name       ; AVRX1400H                                   ;
 ; Family                      ; MAX V                                       ;
-; Total logic elements        ; 223                                         ;
+; Total logic elements        ; 221                                         ;
 ; Total pins                  ; 83                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
@@ -194,37 +192,37 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                       ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+---------+
-; rtl/bdf/AVRX1400H.bdf            ; yes             ; User Block Diagram/Schematic File  ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/bdf/AVRX1400H.bdf               ;         ;
-; rtl/VHDL/lpm_ff5.vhd             ; yes             ; User Wizard-Generated File         ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff5.vhd                ;         ;
-; rtl/VHDL/lpm_ff1.vhd             ; yes             ; User Wizard-Generated File         ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff1.vhd                ;         ;
-; rtl/verilog/ADCMCKSEL.v          ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADCMCKSEL.v             ;         ;
-; rtl/verilog/ADC_CLK_GEN.v        ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADC_CLK_GEN.v           ;         ;
-; rtl/verilog/ADC_FS_Manager.v     ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADC_FS_Manager.v        ;         ;
-; rtl/verilog/clk_sync_exchanger.v ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/clk_sync_exchanger.v    ;         ;
-; rtl/verilog/Delay1Cycle.v        ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/Delay1Cycle.v           ;         ;
-; rtl/verilog/DSDTDM_Ch_Div.v      ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/DSDTDM_Ch_Div.v         ;         ;
-; rtl/verilog/expander.v           ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/expander.v              ;         ;
-; rtl/verilog/LEGO_Workaround.v    ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/LEGO_Workaround.v       ;         ;
-; rtl/verilog/lpm_and_wrapper.v    ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/lpm_and_wrapper.v       ;         ;
-; rtl/verilog/timing_aligner.v     ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/timing_aligner.v        ;         ;
-; rtl/verilog/upcounter.v          ; yes             ; User Verilog HDL File              ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/upcounter.v             ;         ;
-; mux2in.tdf                       ; yes             ; Auto-Found Wizard-Generated File   ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/megafunction/verilog/mux2in.tdf ;         ;
-; lpm_mux.inc                      ; yes             ; Auto-Found AHDL File               ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_mux.inc                                    ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_mux.tdf                                    ;         ;
-; aglobal160.inc                   ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/aglobal160.inc                                 ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/muxlut.inc                                     ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/bypassff.inc                                   ;         ;
-; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altshift.inc                                   ;         ;
-; db/mux_i6c.tdf                   ; yes             ; Auto-Generated Megafunction        ; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf                      ;         ;
-; lpm_ff.tdf                       ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_ff.tdf                                     ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_constant.inc                               ;         ;
-; lpm_and.tdf                      ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_and.tdf                                    ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                           ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                 ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------------------------+---------+
+; rtl/bdf/AVRX1400H.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/bdf/AVRX1400H.bdf               ;         ;
+; rtl/VHDL/lpm_ff5.vhd             ; yes             ; User Wizard-Generated File         ; C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff5.vhd                ;         ;
+; rtl/VHDL/lpm_ff1.vhd             ; yes             ; User Wizard-Generated File         ; C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff1.vhd                ;         ;
+; rtl/verilog/ADCMCKSEL.v          ; yes             ; User Verilog HDL File              ; C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADCMCKSEL.v             ;         ;
+; rtl/verilog/ADC_CLK_GEN.v        ; yes             ; User Verilog HDL File              ; C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADC_CLK_GEN.v           ;         ;
+; rtl/verilog/ADC_FS_Manager.v     ; yes             ; User Verilog HDL File              ; C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADC_FS_Manager.v        ;         ;
+; rtl/verilog/clk_sync_exchanger.v ; yes             ; User Verilog HDL File              ; C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/clk_sync_exchanger.v    ;         ;
+; rtl/verilog/Delay1Cycle.v        ; yes             ; User Verilog HDL File              ; C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/Delay1Cycle.v           ;         ;
+; rtl/verilog/DSDTDM_Ch_Div.v      ; yes             ; User Verilog HDL File              ; C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/DSDTDM_Ch_Div.v         ;         ;
+; rtl/verilog/expander.v           ; yes             ; User Verilog HDL File              ; C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/expander.v              ;         ;
+; rtl/verilog/LEGO_Workaround.v    ; yes             ; User Verilog HDL File              ; C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/LEGO_Workaround.v       ;         ;
+; rtl/verilog/lpm_and_wrapper.v    ; yes             ; User Verilog HDL File              ; C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/lpm_and_wrapper.v       ;         ;
+; rtl/verilog/timing_aligner.v     ; yes             ; User Verilog HDL File              ; C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/timing_aligner.v        ;         ;
+; rtl/verilog/upcounter.v          ; yes             ; User Verilog HDL File              ; C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/upcounter.v             ;         ;
+; mux2in.tdf                       ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/megafunction/verilog/mux2in.tdf ;         ;
+; lpm_mux.inc                      ; yes             ; Auto-Found AHDL File               ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_mux.inc                                                              ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_mux.tdf                                                              ;         ;
+; aglobal160.inc                   ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/aglobal160.inc                                                           ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/muxlut.inc                                                               ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/bypassff.inc                                                             ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altshift.inc                                                             ;         ;
+; db/mux_i6c.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf                      ;         ;
+; lpm_ff.tdf                       ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_ff.tdf                                                               ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_constant.inc                                                         ;         ;
+; lpm_and.tdf                      ; yes             ; Megafunction                       ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_and.tdf                                                              ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -232,20 +230,20 @@ agreement for further details.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Total logic elements                        ; 223        ;
-;     -- Combinational with no register       ; 89         ;
+; Total logic elements                        ; 221        ;
+;     -- Combinational with no register       ; 87         ;
 ;     -- Register only                        ; 70         ;
 ;     -- Combinational with a register        ; 64         ;
 ;                                             ;            ;
 ; Logic element usage by number of LUT inputs ;            ;
 ;     -- 4 input functions                    ; 88         ;
-;     -- 3 input functions                    ; 23         ;
+;     -- 3 input functions                    ; 21         ;
 ;     -- 2 input functions                    ; 37         ;
 ;     -- 1 input functions                    ; 5          ;
 ;     -- 0 input functions                    ; 0          ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 201        ;
+;     -- normal mode                          ; 199        ;
 ;     -- arithmetic mode                      ; 22         ;
 ;     -- qfbk mode                            ; 0          ;
 ;     -- register cascade mode                ; 0          ;
@@ -257,8 +255,8 @@ agreement for further details.
 ; I/O pins                                    ; 83         ;
 ; Maximum fan-out node                        ; SCLK_I2S_1 ;
 ; Maximum fan-out                             ; 42         ;
-; Total fan-out                               ; 761        ;
-; Average fan-out                             ; 2.49       ;
+; Total fan-out                               ; 755        ;
+; Average fan-out                             ; 2.48       ;
 +---------------------------------------------+------------+
 
 
@@ -267,7 +265,7 @@ agreement for further details.
 +-------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node          ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                        ; Entity Name             ; Library Name ;
 +-------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------+-------------------------+--------------+
-; |AVRX1400H                          ; 223 (47)    ; 134          ; 0          ; 83   ; 0            ; 89 (47)      ; 70 (0)            ; 64 (0)           ; 26 (0)          ; 0 (0)      ; |AVRX1400H                                                                 ; AVRX1400H               ; work         ;
+; |AVRX1400H                          ; 221 (45)    ; 134          ; 0          ; 83   ; 0            ; 87 (45)      ; 70 (0)            ; 64 (0)           ; 26 (0)          ; 0 (0)      ; |AVRX1400H                                                                 ; AVRX1400H               ; work         ;
 ;    |ADC_CLK_GEN:inst63|             ; 10 (10)     ; 9            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 9 (9)            ; 8 (8)           ; 0 (0)      ; |AVRX1400H|ADC_CLK_GEN:inst63                                              ; ADC_CLK_GEN             ; work         ;
 ;    |ADC_FS_Manager:inst206|         ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|ADC_FS_Manager:inst206                                          ; ADC_FS_Manager          ; work         ;
 ;    |DSD_TDM_Channel_Divider:inst79| ; 95 (95)     ; 72           ; 0          ; 0    ; 0            ; 23 (23)      ; 34 (34)           ; 38 (38)          ; 5 (5)           ; 0 (0)      ; |AVRX1400H|DSD_TDM_Channel_Divider:inst79                                  ; DSD_TDM_Channel_Divider ; work         ;
@@ -352,7 +350,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |AVRX1400H|DSD_TDM_Channel_Divider:inst79|Ch1_TxReg[0]  ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |AVRX1400H|DSD_TDM_Channel_Divider:inst79|Ch0_TxReg[15] ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |AVRX1400H|DSD_TDM_Channel_Divider:inst79|Ch1_TxReg[15] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
 
 
@@ -967,44 +965,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MUX2in:inst26|lpm_mux:LPM_MUX_component ;
-+------------------------+---------+---------------------------------------------------+
-; Parameter Name         ; Value   ; Type                                              ;
-+------------------------+---------+---------------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
-; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
-; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
-; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
-; LPM_WIDTH              ; 1       ; Untyped                                           ;
-; LPM_SIZE               ; 2       ; Untyped                                           ;
-; LPM_WIDTHS             ; 1       ; Untyped                                           ;
-; LPM_PIPELINE           ; 0       ; Untyped                                           ;
-; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
-; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
-+------------------------+---------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MUX2in:inst17|lpm_mux:LPM_MUX_component ;
-+------------------------+---------+---------------------------------------------------+
-; Parameter Name         ; Value   ; Type                                              ;
-+------------------------+---------+---------------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                        ;
-; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                      ;
-; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                      ;
-; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                    ;
-; LPM_WIDTH              ; 1       ; Untyped                                           ;
-; LPM_SIZE               ; 2       ; Untyped                                           ;
-; LPM_WIDTHS             ; 1       ; Untyped                                           ;
-; LPM_PIPELINE           ; 0       ; Untyped                                           ;
-; CBXI_PARAMETER         ; mux_i6c ; Untyped                                           ;
-; DEVICE_FAMILY          ; MAX V   ; Untyped                                           ;
-+------------------------+---------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: MUX2in:inst148|lpm_mux:LPM_MUX_component ;
 +------------------------+---------+----------------------------------------------------+
@@ -1292,59 +1252,61 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Tue Sep 13 13:50:52 2016
+    Info: Processing started: Tue Oct 04 18:10:46 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AVR1911Digital -c AVRX1400H
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/bdf/avrx1400h.bdf
     Info (12023): Found entity 1: AVRX1400H
 Info (12021): Found 2 design units, including 1 entities, in source file rtl/vhdl/lpm_ff5.vhd
-    Info (12022): Found design unit 1: lpm_ff5-SYN File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff5.vhd Line: 52
-    Info (12023): Found entity 1: lpm_ff5 File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff5.vhd Line: 42
+    Info (12022): Found design unit 1: lpm_ff5-SYN File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff5.vhd Line: 52
+    Info (12023): Found entity 1: lpm_ff5 File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff5.vhd Line: 42
 Info (12021): Found 2 design units, including 1 entities, in source file rtl/vhdl/lpm_ff1.vhd
-    Info (12022): Found design unit 1: lpm_ff1-SYN File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff1.vhd Line: 52
-    Info (12023): Found entity 1: lpm_ff1 File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff1.vhd Line: 42
+    Info (12022): Found design unit 1: lpm_ff1-SYN File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff1.vhd Line: 52
+    Info (12023): Found entity 1: lpm_ff1 File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff1.vhd Line: 42
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/adcmcksel.v
-    Info (12023): Found entity 1: ADCMCKSEL File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADCMCKSEL.v Line: 1
+    Info (12023): Found entity 1: ADCMCKSEL File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADCMCKSEL.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/adc_clk_gen.v
-    Info (12023): Found entity 1: ADC_CLK_GEN File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADC_CLK_GEN.v Line: 1
+    Info (12023): Found entity 1: ADC_CLK_GEN File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADC_CLK_GEN.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/adc_fs_manager.v
-    Info (12023): Found entity 1: ADC_FS_Manager File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADC_FS_Manager.v Line: 1
+    Info (12023): Found entity 1: ADC_FS_Manager File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADC_FS_Manager.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/clk_sync_exchanger.v
-    Info (12023): Found entity 1: clk_sync_exchanger File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/clk_sync_exchanger.v Line: 8
+    Info (12023): Found entity 1: clk_sync_exchanger File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/clk_sync_exchanger.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/delay1cycle.v
-    Info (12023): Found entity 1: Delay1Cycle File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/Delay1Cycle.v Line: 1
+    Info (12023): Found entity 1: Delay1Cycle File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/Delay1Cycle.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/dsdtdm_ch_div.v
-    Info (12023): Found entity 1: DSD_TDM_Channel_Divider File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/DSDTDM_Ch_Div.v Line: 1
+    Info (12023): Found entity 1: DSD_TDM_Channel_Divider File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/DSDTDM_Ch_Div.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/expander.v
-    Info (12023): Found entity 1: expander File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/expander.v Line: 1
+    Info (12023): Found entity 1: expander File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/expander.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/lego_workaround.v
-    Info (12023): Found entity 1: LEGO_Workaround File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/LEGO_Workaround.v Line: 1
+    Info (12023): Found entity 1: LEGO_Workaround File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/LEGO_Workaround.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/lpm_and_wrapper.v
-    Info (12023): Found entity 1: lpm_and_wrapper File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/lpm_and_wrapper.v Line: 1
+    Info (12023): Found entity 1: lpm_and_wrapper File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/lpm_and_wrapper.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/timing_aligner.v
-    Info (12023): Found entity 1: timing_aligner File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/timing_aligner.v Line: 3
+    Info (12023): Found entity 1: timing_aligner File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/timing_aligner.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/verilog/upcounter.v
-    Info (12023): Found entity 1: upcounter File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/upcounter.v Line: 1
+    Info (12023): Found entity 1: upcounter File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/upcounter.v Line: 1
 Info (12127): Elaborating entity "AVRX1400H" for the top level hierarchy
 Warning (275006): Can't find a definition for parameter AVRX1400HAudioPLD -- assuming Ver. 60.00   31-Aug'-2016 was intended to be a quoted string
 Warning (275009): Pin "SLRCK" not connected
 Warning (275009): Pin "SBCK" not connected
 Warning (275009): Pin "GPIO_2" not connected
+Warning (275009): Pin "DSP1OUTFH" not connected
+Warning (275009): Pin "DSP1OUTFW" not connected
 Warning (275009): Pin "PLDERR2" not connected
 Warning (275009): Pin "SDOUT_I2S_2" not connected
 Warning (12125): Using design file rtl/megafunction/verilog/mux2in.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: MUX2in File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/megafunction/verilog/mux2in.tdf Line: 40
+    Info (12023): Found entity 1: MUX2in File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/megafunction/verilog/mux2in.tdf Line: 40
 Info (12128): Elaborating entity "MUX2in" for hierarchy "MUX2in:inst210"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "MUX2in:inst210|lpm_mux:LPM_MUX_component" File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/megafunction/verilog/mux2in.tdf Line: 50
-Info (12130): Elaborated megafunction instantiation "MUX2in:inst210|lpm_mux:LPM_MUX_component" File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/megafunction/verilog/mux2in.tdf Line: 50
-Info (12133): Instantiated megafunction "MUX2in:inst210|lpm_mux:LPM_MUX_component" with the following parameter: File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/megafunction/verilog/mux2in.tdf Line: 50
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "MUX2in:inst210|lpm_mux:LPM_MUX_component" File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/megafunction/verilog/mux2in.tdf Line: 50
+Info (12130): Elaborated megafunction instantiation "MUX2in:inst210|lpm_mux:LPM_MUX_component" File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/megafunction/verilog/mux2in.tdf Line: 50
+Info (12133): Instantiated megafunction "MUX2in:inst210|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/megafunction/verilog/mux2in.tdf Line: 50
     Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
     Info (12134): Parameter "LPM_WIDTH" = "1"
     Info (12134): Parameter "LPM_SIZE" = "2"
     Info (12134): Parameter "LPM_WIDTHS" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_i6c.tdf
-    Info (12023): Found entity 1: mux_i6c File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 23
+    Info (12023): Found entity 1: mux_i6c File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 23
 Info (12128): Elaborating entity "mux_i6c" for hierarchy "MUX2in:inst210|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated" File: c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "expander" for hierarchy "expander:inst141"
 Info (12128): Elaborating entity "MUX2in" for hierarchy "MUX2in:inst75"
@@ -1352,9 +1314,9 @@ Info (12128): Elaborating entity "ADC_CLK_GEN" for hierarchy "ADC_CLK_GEN:inst63
 Info (12128): Elaborating entity "ADC_FS_Manager" for hierarchy "ADC_FS_Manager:inst206"
 Info (12128): Elaborating entity "upcounter" for hierarchy "upcounter:inst19"
 Info (12128): Elaborating entity "lpm_ff5" for hierarchy "lpm_ff5:inst25"
-Info (12128): Elaborating entity "lpm_ff" for hierarchy "lpm_ff5:inst25|lpm_ff:lpm_ff_component" File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff5.vhd Line: 80
-Info (12130): Elaborated megafunction instantiation "lpm_ff5:inst25|lpm_ff:lpm_ff_component" File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff5.vhd Line: 80
-Info (12133): Instantiated megafunction "lpm_ff5:inst25|lpm_ff:lpm_ff_component" with the following parameter: File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff5.vhd Line: 80
+Info (12128): Elaborating entity "lpm_ff" for hierarchy "lpm_ff5:inst25|lpm_ff:lpm_ff_component" File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff5.vhd Line: 80
+Info (12130): Elaborated megafunction instantiation "lpm_ff5:inst25|lpm_ff:lpm_ff_component" File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff5.vhd Line: 80
+Info (12133): Instantiated megafunction "lpm_ff5:inst25|lpm_ff:lpm_ff_component" with the following parameter: File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/VHDL/lpm_ff5.vhd Line: 80
     Info (12134): Parameter "lpm_fftype" = "DFF"
     Info (12134): Parameter "lpm_type" = "LPM_FF"
     Info (12134): Parameter "lpm_width" = "1"
@@ -1368,41 +1330,43 @@ Info (12128): Elaborating entity "ADCMCKSEL" for hierarchy "ADCMCKSEL:inst102"
 Info (12128): Elaborating entity "clk_sync_exchanger" for hierarchy "clk_sync_exchanger:inst104"
 Info (12128): Elaborating entity "timing_aligner" for hierarchy "timing_aligner:inst111"
 Info (12128): Elaborating entity "lpm_and_wrapper" for hierarchy "lpm_and_wrapper:inst86"
-Info (12128): Elaborating entity "lpm_and" for hierarchy "lpm_and_wrapper:inst86|lpm_and:lpm_and" File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/lpm_and_wrapper.v Line: 26
-Info (12130): Elaborated megafunction instantiation "lpm_and_wrapper:inst86|lpm_and:lpm_and" File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/lpm_and_wrapper.v Line: 26
-Info (12133): Instantiated megafunction "lpm_and_wrapper:inst86|lpm_and:lpm_and" with the following parameter: File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/lpm_and_wrapper.v Line: 26
+Info (12128): Elaborating entity "lpm_and" for hierarchy "lpm_and_wrapper:inst86|lpm_and:lpm_and" File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/lpm_and_wrapper.v Line: 26
+Info (12130): Elaborated megafunction instantiation "lpm_and_wrapper:inst86|lpm_and:lpm_and" File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/lpm_and_wrapper.v Line: 26
+Info (12133): Instantiated megafunction "lpm_and_wrapper:inst86|lpm_and:lpm_and" with the following parameter: File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/lpm_and_wrapper.v Line: 26
     Info (12134): Parameter "lpm_width" = "1"
     Info (12134): Parameter "lpm_size" = "16"
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer ADC_CLK_GEN:inst63|LRCK_out File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADC_CLK_GEN.v Line: 5
+    Warning (19017): Found clock multiplexer ADC_CLK_GEN:inst63|LRCK_out File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/verilog/ADC_CLK_GEN.v Line: 5
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer MUX2in:inst72|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
-    Warning (19017): Found clock multiplexer MUX2in:inst156|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
-    Warning (19017): Found clock multiplexer MUX2in:inst37|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
-    Warning (19017): Found clock multiplexer MUX2in:inst164|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
-    Warning (19017): Found clock multiplexer MUX2in:inst165|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
-    Warning (19017): Found clock multiplexer MUX2in:inst10|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
-    Warning (19017): Found clock multiplexer MUX2in:inst88|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
+    Warning (19017): Found clock multiplexer MUX2in:inst72|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
+    Warning (19017): Found clock multiplexer MUX2in:inst156|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
+    Warning (19017): Found clock multiplexer MUX2in:inst37|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
+    Warning (19017): Found clock multiplexer MUX2in:inst164|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
+    Warning (19017): Found clock multiplexer MUX2in:inst165|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
+    Warning (19017): Found clock multiplexer MUX2in:inst10|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
+    Warning (19017): Found clock multiplexer MUX2in:inst88|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated|result_node[0]~0 File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/db/mux_i6c.tdf Line: 30
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "DSP1IN_/SW" is stuck at GND
 Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "inst21"
-Warning (21074): Design contains 7 input pin(s) that do not drive logic
+Warning (21074): Design contains 9 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "OSC22M"
     Warning (15610): No output dependent on input pin "GPIO_1"
     Warning (15610): No output dependent on input pin "SLRCK"
     Warning (15610): No output dependent on input pin "SBCK"
     Warning (15610): No output dependent on input pin "GPIO_2"
+    Warning (15610): No output dependent on input pin "DSP1OUTFH"
+    Warning (15610): No output dependent on input pin "DSP1OUTFW"
     Warning (15610): No output dependent on input pin "PLDERR2"
     Warning (15610): No output dependent on input pin "SDOUT_I2S_2"
-Info (21057): Implemented 306 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 304 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 46 input pins
     Info (21059): Implemented 37 output pins
-    Info (21061): Implemented 223 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 28 warnings
-    Info: Peak virtual memory: 835 megabytes
-    Info: Processing ended: Tue Sep 13 13:51:12 2016
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:41
+    Info (21061): Implemented 221 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 32 warnings
+    Info: Peak virtual memory: 836 megabytes
+    Info: Processing ended: Tue Oct 04 18:11:03 2016
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:37
 
 

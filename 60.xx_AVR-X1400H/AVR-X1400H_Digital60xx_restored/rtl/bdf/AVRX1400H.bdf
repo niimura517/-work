@@ -530,7 +530,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 4200 2368 4368 2384)
+	(rect 4216 2336 4384 2352)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
 	(text "DSP1OUTSB" (rect 5 0 79 14)(font "Arial" ))
 	(pt 168 8)
@@ -543,11 +543,11 @@ agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "GND" (rect 128 7 152 18)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 4144 2368 4200 2384))
+	(annotation_block (location)(rect 4160 2336 4216 2352))
 )
 (pin
 	(input)
-	(rect 4200 2352 4368 2368)
+	(rect 4216 2448 4384 2464)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
 	(text "DSP1OUTFH" (rect 5 0 79 14)(font "Arial" ))
 	(pt 168 8)
@@ -560,11 +560,11 @@ agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "GND" (rect 128 7 152 18)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 4144 2352 4200 2368))
+	(annotation_block (location)(rect 4160 2448 4216 2464))
 )
 (pin
 	(input)
-	(rect 4208 2296 4376 2312)
+	(rect 4216 2480 4384 2496)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
 	(text "DSP1OUTFW" (rect 5 0 79 14)(font "Arial" ))
 	(pt 168 8)
@@ -577,7 +577,7 @@ agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 152 18)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 4144 2296 4200 2312))
+	(annotation_block (location)(rect 4152 2480 4208 2496))
 )
 (pin
 	(input)
@@ -804,7 +804,7 @@ agreement for further details.
 	(input)
 	(rect 592 2328 776 2344)
 	(text "INPUT" (rect 141 0 182 11)(font "Arial" (font_size 6)))
-	(text "SDOUT_I2S_2" (rect 5 0 96 14)(font "Arial" ))
+	(text "SDOUT_I2S_2" (rect 5 0 95 14)(font "Arial" ))
 	(pt 184 8)
 	(drawing
 		(line (pt 100 12)(pt 125 12))
@@ -4526,100 +4526,6 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 4456 2320 4536 2400)
-	(text "MUX2in" (rect 19 0 96 18)(font "Arial" (font_size 10)))
-	(text "inst17" (rect 8 64 57 78)(font "Arial" ))
-	(port
-		(pt 0 40)
-		(input)
-		(text "data1" (rect 0 0 47 16)(font "Arial" (font_size 8)))
-		(text "data1" (rect 4 26 51 42)(font "Arial" (font_size 8)))
-		(line (pt 0 40)(pt 32 40))
-	)
-	(port
-		(pt 0 56)
-		(input)
-		(text "data0" (rect 0 0 47 16)(font "Arial" (font_size 8)))
-		(text "data0" (rect 4 42 51 58)(font "Arial" (font_size 8)))
-		(line (pt 0 56)(pt 32 56))
-	)
-	(port
-		(pt 40 80)
-		(input)
-		(text "sel" (rect 0 0 16 28)(font "Arial" (font_size 8))(vertical))
-		(text "sel" (rect 33 51 49 79)(font "Arial" (font_size 8))(vertical))
-		(line (pt 40 80)(pt 40 68))
-	)
-	(port
-		(pt 80 48)
-		(output)
-		(text "result" (rect 0 0 56 16)(font "Arial" (font_size 8)))
-		(text "result" (rect 50 34 106 50)(font "Arial" (font_size 8)))
-		(line (pt 80 48)(pt 48 48))
-	)
-	(drawing
-		(line (pt 32 24)(pt 32 72))
-		(line (pt 32 24)(pt 48 32))
-		(line (pt 32 72)(pt 48 64))
-		(line (pt 48 32)(pt 48 64))
-		(line (pt 0 0)(pt 82 0))
-		(line (pt 82 0)(pt 82 82))
-		(line (pt 0 82)(pt 82 82))
-		(line (pt 0 0)(pt 0 82))
-		(line (pt 0 0)(pt 0 0))
-		(line (pt 0 0)(pt 0 0))
-		(line (pt 0 0)(pt 0 0))
-		(line (pt 0 0)(pt 0 0))
-	)
-)
-(symbol
-	(rect 4632 2296 4712 2376)
-	(text "MUX2in" (rect 19 0 96 18)(font "Arial" (font_size 10)))
-	(text "inst26" (rect 8 64 57 78)(font "Arial" ))
-	(port
-		(pt 0 40)
-		(input)
-		(text "data1" (rect 0 0 47 16)(font "Arial" (font_size 8)))
-		(text "data1" (rect 4 26 51 42)(font "Arial" (font_size 8)))
-		(line (pt 0 40)(pt 32 40))
-	)
-	(port
-		(pt 0 56)
-		(input)
-		(text "data0" (rect 0 0 47 16)(font "Arial" (font_size 8)))
-		(text "data0" (rect 4 42 51 58)(font "Arial" (font_size 8)))
-		(line (pt 0 56)(pt 32 56))
-	)
-	(port
-		(pt 40 80)
-		(input)
-		(text "sel" (rect 0 0 16 28)(font "Arial" (font_size 8))(vertical))
-		(text "sel" (rect 33 51 49 79)(font "Arial" (font_size 8))(vertical))
-		(line (pt 40 80)(pt 40 68))
-	)
-	(port
-		(pt 80 48)
-		(output)
-		(text "result" (rect 0 0 56 16)(font "Arial" (font_size 8)))
-		(text "result" (rect 50 34 106 50)(font "Arial" (font_size 8)))
-		(line (pt 80 48)(pt 48 48))
-	)
-	(drawing
-		(line (pt 32 24)(pt 32 72))
-		(line (pt 32 24)(pt 48 32))
-		(line (pt 32 72)(pt 48 64))
-		(line (pt 48 32)(pt 48 64))
-		(line (pt 0 0)(pt 82 0))
-		(line (pt 82 0)(pt 82 82))
-		(line (pt 0 82)(pt 82 82))
-		(line (pt 0 0)(pt 0 82))
-		(line (pt 0 0)(pt 0 0))
-		(line (pt 0 0)(pt 0 0))
-		(line (pt 0 0)(pt 0 0))
-		(line (pt 0 0)(pt 0 0))
-	)
-)
-(symbol
 	(rect 1976 536 2024 568)
 	(text "WIRE" (rect 1 0 34 11)(font "Arial" (font_size 6)))
 	(text "inst31" (rect 3 21 52 35)(font "Arial" ))
@@ -7695,10 +7601,6 @@ agreement for further details.
 	(pt 5304 2248)
 )
 (connector
-	(pt 4712 2344)
-	(pt 5304 2344)
-)
-(connector
 	(pt 5080 392)
 	(pt 5184 392)
 )
@@ -7753,26 +7655,6 @@ agreement for further details.
 (connector
 	(pt 2000 48)
 	(pt 1968 48)
-)
-(connector
-	(pt 4600 2336)
-	(pt 4632 2336)
-)
-(connector
-	(pt 4456 2376)
-	(pt 4368 2376)
-)
-(connector
-	(pt 4536 2368)
-	(pt 4576 2368)
-)
-(connector
-	(pt 4576 2368)
-	(pt 4576 2352)
-)
-(connector
-	(pt 4576 2352)
-	(pt 4632 2352)
 )
 (connector
 	(pt 4872 1592)
@@ -8436,18 +8318,6 @@ agreement for further details.
 	(pt 6056 176)
 )
 (connector
-	(pt 4456 2360)
-	(pt 4368 2360)
-)
-(connector
-	(pt 4600 2304)
-	(pt 4376 2304)
-)
-(connector
-	(pt 4600 2336)
-	(pt 4600 2304)
-)
-(connector
 	(pt 5560 2808)
 	(pt 5632 2808)
 )
@@ -8744,24 +8614,6 @@ agreement for further details.
 	(text "SCLK_I2S_0" (rect 6242 1616 6324 1630)(font "Arial" ))
 	(pt 6248 1632)
 	(pt 6528 1632)
-)
-(connector
-	(pt 4672 2376)
-	(pt 4672 2528)
-)
-(connector
-	(text "INfsSEL[1]" (rect 4114 2520 4196 2534)(font "Arial" ))
-	(pt 4672 2528)
-	(pt 4168 2528)
-)
-(connector
-	(pt 4496 2400)
-	(pt 4496 2480)
-)
-(connector
-	(text "INfsSEL[0]" (rect 4114 2472 4196 2486)(font "Arial" ))
-	(pt 4168 2480)
-	(pt 4496 2480)
 )
 (connector
 	(text "INfsSEL[1..0]" (rect 2018 2368 2125 2382)(font "Arial" ))
@@ -9637,6 +9489,18 @@ agreement for further details.
 (connector
 	(pt 2568 88)
 	(pt 2568 168)
+)
+(connector
+	(pt 4384 2488)
+	(pt 4400 2488)
+)
+(connector
+	(pt 4384 2344)
+	(pt 5304 2344)
+)
+(connector
+	(pt 4384 2456)
+	(pt 4408 2456)
 )
 (junction (pt 3280 1848))
 (junction (pt 3280 1624))

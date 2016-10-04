@@ -1,5 +1,5 @@
 Archive Project report for AVRX1400H
-Tue Sep 13 14:06:42 2016
+Tue Oct 04 18:14:39 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Tue Sep 13 14:06:42 2016 ;
+; Archive Project Status ; Successful - Tue Oct 04 18:14:39 2016 ;
 ; Revision Name          ; AVRX1400H                             ;
 ; Top-level Entity Name  ; AVRX1400H                             ;
 ; Family                 ; MAX V                                 ;
@@ -50,17 +50,17 @@ Info: File Set 'Source control' contains:
     Info: Project source and settings files
     Info: Automatically detected source files
 Info: Archive will store files relative to the closest common parent directory
-Info (13213): Using common directory F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/
+Info (13213): Using common directory C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive 'F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/AVR1911Digital.qar'
+Info: Generated archive 'C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'AVRX1400H.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/altera_lite/16.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 806 megabytes
-    Info: Processing ended: Tue Sep 13 14:06:42 2016
+    Info: Peak virtual memory: 807 megabytes
+    Info: Processing ended: Tue Oct 04 18:14:39 2016
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

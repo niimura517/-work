@@ -1,5 +1,5 @@
 Assembler report for AVRX1400H
-Tue Sep 13 13:51:20 2016
+Tue Oct 04 18:11:10 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -10,8 +10,8 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/AVRX1400H.pof
-  6. Assembler Device Options: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/AVRX1400H.svf
+  5. Assembler Device Options: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/AVRX1400H.pof
+  6. Assembler Device Options: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/AVRX1400H.svf
   7. Assembler Messages
 
 
@@ -39,7 +39,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Sep 13 13:51:20 2016 ;
+; Assembler Status      ; Successful - Tue Oct 04 18:11:10 2016 ;
 ; Revision Name         ; AVRX1400H                             ;
 ; Top-level Entity Name ; AVRX1400H                             ;
 ; Family                ; MAX V                                 ;
@@ -54,34 +54,34 @@ agreement for further details.
 +--------+---------+---------------+
 
 
-+------------------------------------------------------------------------------+
-; Assembler Generated Files                                                    ;
-+------------------------------------------------------------------------------+
-; File Name                                                                    ;
-+------------------------------------------------------------------------------+
-; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/AVRX1400H.pof ;
-; F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/AVRX1400H.svf ;
-+------------------------------------------------------------------------------+
-
-
 +--------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/AVRX1400H.pof ;
-+----------------+---------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                               ;
-+----------------+---------------------------------------------------------------------------------------+
-; Device         ; 5M570ZF256C5                                                                          ;
-; JTAG usercode  ; 0xFFFF6001                                                                            ;
-; Checksum       ; 0x0031B90E                                                                            ;
-+----------------+---------------------------------------------------------------------------------------+
-
-
+; Assembler Generated Files                                                                              ;
 +--------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: F:/CPLD_FPGA/@Work/X1400/60.xx/AVR-X1400H_Digital60xx_restored/AVRX1400H.svf ;
-+-----------+--------------------------------------------------------------------------------------------+
-; Option    ; Setting                                                                                    ;
-+-----------+--------------------------------------------------------------------------------------------+
-; SVF file  ;                                                                                            ;
-+-----------+--------------------------------------------------------------------------------------------+
+; File Name                                                                                              ;
++--------------------------------------------------------------------------------------------------------+
+; C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/AVRX1400H.pof ;
+; C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/AVRX1400H.svf ;
++--------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/AVRX1400H.pof ;
++----------------+-----------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                         ;
++----------------+-----------------------------------------------------------------------------------------------------------------+
+; Device         ; 5M570ZF256C5                                                                                                    ;
+; JTAG usercode  ; 0xFFFF6001                                                                                                      ;
+; Checksum       ; 0x0031C7CA                                                                                                      ;
++----------------+-----------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/AVRX1400H.svf ;
++-----------+----------------------------------------------------------------------------------------------------------------------+
+; Option    ; Setting                                                                                                              ;
++-----------+----------------------------------------------------------------------------------------------------------------------+
+; SVF file  ;                                                                                                                      ;
++-----------+----------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -90,14 +90,14 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Tue Sep 13 13:51:19 2016
+    Info: Processing started: Tue Oct 04 18:11:09 2016
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off AVR1911Digital -c AVRX1400H
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 719 megabytes
-    Info: Processing ended: Tue Sep 13 13:51:20 2016
+    Info: Peak virtual memory: 722 megabytes
+    Info: Processing ended: Tue Oct 04 18:11:10 2016
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

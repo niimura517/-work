@@ -299,8 +299,8 @@ set_input_delay -clock {LEGOBCK_192K} -min 0 [get_ports {LRCK_I2S_0 SDOUT_I2S_0}
 set_input_delay -clock {LEGOBCK_DSD128} -max 6 [get_ports {LRCK_I2S_1 SDOUT_I2S_1}] -clock_fall -add_delay
 set_input_delay -clock {LEGOBCK_DSD128} -min 0 [get_ports {LRCK_I2S_1 SDOUT_I2S_1}] -clock_fall -add_delay
 # DSP1 Output
-set_input_delay -clock {DSP1OUTBCK_192K} -max 13.25 [get_ports {DSP1OUTLRCK DSP1OUTCSW1 DSP1OUTF DSP1OUTFH DSP1OUTFW DSP1OUTS DSP1OUTSB}] -clock_fall -add_delay
-set_input_delay -clock {DSP1OUTBCK_192K} -min 0.5 [get_ports {DSP1OUTLRCK DSP1OUTCSW1 DSP1OUTF DSP1OUTFH DSP1OUTFW DSP1OUTS DSP1OUTSB}] -clock_fall -add_delay
+set_input_delay -clock {DSP1OUTBCK_192K} -max 13.25 [get_ports {DSP1OUTLRCK DSP1OUTCSW1 DSP1OUTF DSP1OUTS DSP1OUTSB}] -clock_fall -add_delay
+set_input_delay -clock {DSP1OUTBCK_192K} -min 0.5 [get_ports {DSP1OUTLRCK DSP1OUTCSW1 DSP1OUTF DSP1OUTS DSP1OUTSB}] -clock_fall -add_delay
 # Z2ADC
 set_input_delay -clock {Z2ADCBCK_48K} -max 10 [get_ports {DIRAUXLRCK DIRAUXDATA}] -clock_fall -add_delay
 set_input_delay -clock {Z2ADCBCK_48K} -min -10 [get_ports {DIRAUXLRCK DIRAUXDATA}] -clock_fall -add_delay

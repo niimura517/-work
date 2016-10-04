@@ -1,5 +1,5 @@
 Flow report for AVRX1400H
-Tue Sep 13 13:51:28 2016
+Tue Oct 04 18:11:15 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,14 +41,14 @@ agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Successful - Tue Sep 13 13:51:28 2016       ;
+; Flow Status           ; Successful - Tue Oct 04 18:11:15 2016       ;
 ; Quartus Prime Version ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name         ; AVRX1400H                                   ;
 ; Top-level Entity Name ; AVRX1400H                                   ;
 ; Family                ; MAX V                                       ;
 ; Device                ; 5M570ZF256C5                                ;
 ; Timing Models         ; Final                                       ;
-; Total logic elements  ; 223 / 570 ( 39 % )                          ;
+; Total logic elements  ; 221 / 570 ( 39 % )                          ;
 ; Total pins            ; 83 / 159 ( 52 % )                           ;
 ; Total virtual pins    ; 0                                           ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                               ;
@@ -60,7 +60,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/13/2016 13:50:53 ;
+; Start date & time ; 10/04/2016 18:10:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; AVRX1400H           ;
 +-------------------+---------------------+
@@ -72,7 +72,7 @@ agreement for further details.
 ; Assignment Name                         ; Value                                               ; Default Value                  ; Entity Name ; Section Id     ;
 +-----------------------------------------+-----------------------------------------------------+--------------------------------+-------------+----------------+
 ; AUTO_PACKED_REGISTERS_MAX               ; Off                                                 ; Auto                           ; --          ; --             ;
-; COMPILER_SIGNATURE_ID                   ; 112702523521613.147374225311720                     ; --                             ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                   ; 112702523521613.147557224611496                     ; --                             ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT                  ; Verilog Hdl                                         ; --                             ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                     ; ModelSim-Altera (Verilog)                           ; <None>                         ; --          ; --             ;
 ; EDA_TIME_SCALE                          ; 1 ps                                                ; --                             ; --          ; eda_simulation ;
@@ -107,12 +107,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:20     ; 1.0                     ; 835 MB              ; 00:00:40                           ;
-; Fitter                    ; 00:00:05     ; 1.0                     ; 1095 MB             ; 00:00:05                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 718 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 740 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 686 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:30     ; --                      ; --                  ; 00:00:49                           ;
+; Analysis & Synthesis      ; 00:00:17     ; 1.0                     ; 836 MB              ; 00:00:37                           ;
+; Fitter                    ; 00:00:04     ; 1.0                     ; 1097 MB             ; 00:00:04                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 721 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 742 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 687 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:25     ; --                      ; --                  ; 00:00:45                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

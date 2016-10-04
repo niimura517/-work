@@ -79,9 +79,7 @@ DSP1OUTCSW1 => inst187.IN0
 DACPCMS <= inst188.DB_MAX_OUTPUT_PORT_TYPE
 DSP1OUTS => inst188.IN0
 DACPCMSB <= inst189.DB_MAX_OUTPUT_PORT_TYPE
-DSP1OUTFW => MUX2in:inst26.data1
-DSP1OUTFH => MUX2in:inst17.data1
-DSP1OUTSB => MUX2in:inst17.data0
+DSP1OUTSB => inst189.IN0
 Z2DACMCK <= inst180.DB_MAX_OUTPUT_PORT_TYPE
 Z2DACBCK <= inst179.DB_MAX_OUTPUT_PORT_TYPE
 Z2DACLRCK <= inst176.DB_MAX_OUTPUT_PORT_TYPE
@@ -104,6 +102,8 @@ Z2DACMUTE <= inst50.DB_MAX_OUTPUT_PORT_TYPE
 SLRCK => ~NO_FANOUT~
 SBCK => ~NO_FANOUT~
 GPIO_2 => ~NO_FANOUT~
+DSP1OUTFH => ~NO_FANOUT~
+DSP1OUTFW => ~NO_FANOUT~
 PLDERR2 => ~NO_FANOUT~
 SDOUT_I2S_2 => ~NO_FANOUT~
 
@@ -1059,56 +1059,6 @@ sclr => ~NO_FANOUT~
 sset => ~NO_FANOUT~
 sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AVRX1400H|MUX2in:inst26
-data0 => lpm_mux:LPM_MUX_component.data[0][0]
-data1 => lpm_mux:LPM_MUX_component.data[1][0]
-sel => lpm_mux:LPM_MUX_component.sel[0]
-result <= lpm_mux:LPM_MUX_component.result[0]
-
-
-|AVRX1400H|MUX2in:inst26|lpm_mux:LPM_MUX_component
-data[0][0] => mux_i6c:auto_generated.data[0]
-data[1][0] => mux_i6c:auto_generated.data[1]
-sel[0] => mux_i6c:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_i6c:auto_generated.result[0]
-
-
-|AVRX1400H|MUX2in:inst26|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[0].IN1
-result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
-
-
-|AVRX1400H|MUX2in:inst17
-data0 => lpm_mux:LPM_MUX_component.data[0][0]
-data1 => lpm_mux:LPM_MUX_component.data[1][0]
-sel => lpm_mux:LPM_MUX_component.sel[0]
-result <= lpm_mux:LPM_MUX_component.result[0]
-
-
-|AVRX1400H|MUX2in:inst17|lpm_mux:LPM_MUX_component
-data[0][0] => mux_i6c:auto_generated.data[0]
-data[1][0] => mux_i6c:auto_generated.data[1]
-sel[0] => mux_i6c:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_i6c:auto_generated.result[0]
-
-
-|AVRX1400H|MUX2in:inst17|lpm_mux:LPM_MUX_component|mux_i6c:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[0].IN1
-result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
 
 
 |AVRX1400H|ADCMCKSEL:inst102
