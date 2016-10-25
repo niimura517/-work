@@ -1,5 +1,5 @@
 Fitter report for AVRX1400H
-Tue Oct 04 18:11:08 2016
+Tue Oct 25 09:05:43 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -57,7 +57,7 @@ agreement for further details.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Tue Oct 04 18:11:08 2016       ;
+; Fitter Status         ; Successful - Tue Oct 25 09:05:43 2016       ;
 ; Quartus Prime Version ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name         ; AVRX1400H                                   ;
 ; Top-level Entity Name ; AVRX1400H                                   ;
@@ -134,7 +134,7 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.6%      ;
+;     Processor 2            ;   2.9%      ;
 +----------------------------+-------------+
 
 
@@ -924,8 +924,6 @@ Info (176444): Device migration not selected. If you intend to use device migrat
     Info (176445): Device 5M2210ZF256C5 is compatible
     Info (176445): Device 5M2210ZF256I5 is compatible
 Info (332104): Reading SDC File: 'AVRX1400H.sdc'
-Warning (332174): Ignored filter at AVRX1400H.sdc(302): DSP1OUTFH could not be matched with a port File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/AVRX1400H.sdc Line: 302
-Warning (332174): Ignored filter at AVRX1400H.sdc(302): DSP1OUTFW could not be matched with a port File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/AVRX1400H.sdc Line: 302
 Warning (332088): No paths exist between clock target "inst190~2|combout" of clock "MUXED_DSP1IN_PLDADCBCK_96K" and its clock source. Assuming zero source clock latency.
 Warning (332088): No paths exist between clock target "inst184~1|combout" of clock "MUXED_DACBCK_DIRBCK_192K" and its clock source. Assuming zero source clock latency.
 Warning (332088): No paths exist between clock target "inst184~1|combout" of clock "MUXED_DACBCK_PLDADCBCK_96K" and its clock source. Assuming zero source clock latency.
@@ -1021,15 +1019,15 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.10 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.19 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/AVRX1400H.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 1097 megabytes
-    Info: Processing ended: Tue Oct 04 18:11:08 2016
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+Info: Quartus Prime Fitter was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 1098 megabytes
+    Info: Processing ended: Tue Oct 25 09:05:43 2016
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:06
 
 
 +----------------------------+
