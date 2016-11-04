@@ -1,5 +1,5 @@
 Fitter report for AVRX1400H
-Tue Oct 25 09:05:43 2016
+Fri Nov 04 11:02:41 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -57,7 +57,7 @@ agreement for further details.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Tue Oct 25 09:05:43 2016       ;
+; Fitter Status         ; Successful - Fri Nov 04 11:02:41 2016       ;
 ; Quartus Prime Version ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name         ; AVRX1400H                                   ;
 ; Top-level Entity Name ; AVRX1400H                                   ;
@@ -134,7 +134,7 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.9%      ;
+;     Processor 2            ;   2.8%      ;
 +----------------------------+-------------+
 
 
@@ -275,10 +275,10 @@ The pin-out file can be found in C:/Users/Hidemi.Niimura/Documents/-work/60.xx_A
 ; DSP1INLRCK   ; C7    ; 2        ; 7            ; 8            ; 3           ; no              ; yes            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; DSP1INMCK    ; C6    ; 2        ; 6            ; 8            ; 1           ; no              ; yes            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; DSP1INRSV_FR ; B6    ; 2        ; 4            ; 8            ; 1           ; no              ; yes            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; DSP1INRSV_SW ; C5    ; 2        ; 5            ; 8            ; 1           ; no              ; yes            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; DSP1INSB_SR  ; B8    ; 2        ; 6            ; 8            ; 0           ; no              ; yes            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; DSP1INSWC_C  ; A7    ; 2        ; 6            ; 8            ; 2           ; no              ; yes            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; DSP1INS_SL   ; B5    ; 2        ; 6            ; 8            ; 3           ; no              ; yes            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; DSP1IN_/SW   ; C5    ; 2        ; 5            ; 8            ; 1           ; no              ; yes            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; HDMISPDIF    ; L16   ; 2        ; 13           ; 2            ; 0           ; no              ; yes            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; LRCK_I2S_2   ; J5    ; 1        ; 0            ; 5            ; 1           ; no              ; yes            ; no              ; no         ; no            ; no       ; On           ; 3.3-V LVTTL  ; 8mA              ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; MPIO_B0      ; M13   ; 2        ; 13           ; 2            ; 3           ; no              ; yes            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
@@ -353,7 +353,7 @@ The pin-out file can be found in C:/Users/Hidemi.Niimura/Documents/-work/60.xx_A
 ; C2       ; 1          ; 1        ; RXLRCK                          ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; C3       ; 0          ; 1        ; RXBCK                           ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; C4       ; 158        ; 2        ; AP_CK                           ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; C5       ; 152        ; 2        ; DSP1IN_/SW                      ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; C5       ; 152        ; 2        ; DSP1INRSV_SW                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; C6       ; 148        ; 2        ; DSP1INMCK                       ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; C7       ; 146        ; 2        ; DSP1INLRCK                      ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; C8       ; 142        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -672,7 +672,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+----------+---------------+
 ; TXI2S0       ; Output   ; --            ;
 ; DSP1INMCK    ; Output   ; --            ;
-; DSP1IN_/SW   ; Output   ; --            ;
 ; PLDADCMCK    ; Output   ; --            ;
 ; PLDADCBCK    ; Output   ; --            ;
 ; PLDADCLRCK   ; Output   ; --            ;
@@ -709,6 +708,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; MPIO_B2      ; Output   ; --            ;
 ; MPIO_B3      ; Output   ; --            ;
 ; Z2DACMUTE    ; Output   ; --            ;
+; DSP1INRSV_SW ; Output   ; --            ;
 ; SLRCK        ; Input    ; --            ;
 ; SBCK         ; Input    ; --            ;
 ; GPIO_2       ; Input    ; --            ;
@@ -1019,15 +1019,15 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.19 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.10 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/AVRX1400H.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 1098 megabytes
-    Info: Processing ended: Tue Oct 25 09:05:43 2016
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 1097 megabytes
+    Info: Processing ended: Fri Nov 04 11:02:41 2016
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
 
 
 +----------------------------+

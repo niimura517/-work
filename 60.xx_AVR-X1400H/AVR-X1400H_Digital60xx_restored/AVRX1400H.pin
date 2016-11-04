@@ -99,7 +99,7 @@ VCCIO1                       : C1        : power  :                   : 3.3V    
 RXLRCK                       : C2        : input  : 3.3-V LVTTL       :         : 1         : Y              
 RXBCK                        : C3        : input  : 3.3-V LVTTL       :         : 1         : Y              
 AP_CK                        : C4        : input  : 3.3-V LVTTL       :         : 2         : Y              
-DSP1IN_/SW                   : C5        : output : 3.3-V LVTTL       :         : 2         : Y              
+DSP1INRSV_SW                 : C5        : output : 3.3-V LVTTL       :         : 2         : Y              
 DSP1INMCK                    : C6        : output : 3.3-V LVTTL       :         : 2         : Y              
 DSP1INLRCK                   : C7        : output : 3.3-V LVTTL       :         : 2         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C8        :        :                   :         : 2         :                

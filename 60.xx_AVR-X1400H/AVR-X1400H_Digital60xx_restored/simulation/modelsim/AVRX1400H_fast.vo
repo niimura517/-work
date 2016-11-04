@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition"
 
-// DATE "10/25/2016 09:05:51"
+// DATE "11/04/2016 11:02:48"
 
 // 
 // Device: Altera 5M570ZF256C5 Package FBGA256
@@ -41,7 +41,6 @@ module AVRX1400H (
 	DIRMCK,
 	RXMCK,
 	DIRXMCK,
-	\DSP1IN_/SW ,
 	PLDADCMCK,
 	PLDADCBCK,
 	PLDADCLRCK,
@@ -106,6 +105,7 @@ module AVRX1400H (
 	MPIO_B2,
 	MPIO_B3,
 	Z2DACMUTE,
+	DSP1INRSV_SW,
 	SLRCK,
 	SBCK,
 	GPIO_2,
@@ -124,7 +124,6 @@ input 	MCLK_I2S_0;
 input 	DIRMCK;
 input 	RXMCK;
 input 	DIRXMCK;
-output 	\DSP1IN_/SW ;
 output 	PLDADCMCK;
 output 	PLDADCBCK;
 output 	PLDADCLRCK;
@@ -189,6 +188,7 @@ output 	MPIO_B1;
 output 	MPIO_B2;
 output 	MPIO_B3;
 output 	Z2DACMUTE;
+output 	DSP1INRSV_SW;
 input 	SLRCK;
 input 	SBCK;
 input 	GPIO_2;
@@ -8833,16 +8833,6 @@ maxv_io \DSP1INMCK~I (
 defparam \DSP1INMCK~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_C5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
-maxv_io \DSP1IN_/SW~I (
-	.datain(gnd),
-	.oe(vcc),
-	.combout(),
-	.padio(\DSP1IN_/SW ));
-// synopsys translate_off
-defparam \DSP1IN_/SW~I .operation_mode = "output";
-// synopsys translate_on
-
 // Location: PIN_P6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
 maxv_io \PLDADCMCK~I (
 	.datain(\inst75|LPM_MUX_component|auto_generated|result_node[0]~0_combout ),
@@ -9201,6 +9191,16 @@ maxv_io \Z2DACMUTE~I (
 	.padio(Z2DACMUTE));
 // synopsys translate_off
 defparam \Z2DACMUTE~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_C5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+maxv_io \DSP1INRSV_SW~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(DSP1INRSV_SW));
+// synopsys translate_off
+defparam \DSP1INRSV_SW~I .operation_mode = "output";
 // synopsys translate_on
 
 // Location: PIN_E16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default

@@ -25,7 +25,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "AVRX1400H")
-  (DATE "10/25/2016 09:05:51")
+  (DATE "11/04/2016 11:02:48")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition")
@@ -5640,15 +5640,6 @@
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE DSP1IN_\/SW\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH datain padio (10807:10807:10807) (10807:10807:10807))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
     (INSTANCE PLDADCMCK\~I)
     (DELAY
       (ABSOLUTE
@@ -5983,6 +5974,15 @@
     (DELAY
       (ABSOLUTE
         (PORT datain (4542:4542:4542) (4542:4542:4542))
+        (IOPATH datain padio (10807:10807:10807) (10807:10807:10807))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE DSP1INRSV_SW\~I)
+    (DELAY
+      (ABSOLUTE
         (IOPATH datain padio (10807:10807:10807) (10807:10807:10807))
       )
     )

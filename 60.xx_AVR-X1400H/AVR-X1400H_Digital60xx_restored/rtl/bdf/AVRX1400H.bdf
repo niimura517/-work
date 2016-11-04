@@ -853,23 +853,6 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 200 2336 376 2352)
-	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
-	(text "DSP1IN_/SW" (rect 90 0 172 14)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-	(annotation_block (location)(rect 376 2336 424 2352))
-)
-(pin
-	(output)
 	(rect 3160 2272 3336 2288)
 	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
 	(text "PLDADCMCK" (rect 90 0 164 14)(font "Arial" ))
@@ -1445,6 +1428,23 @@ agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 	(annotation_block (location)(rect 5344 208 5392 224))
+)
+(pin
+	(output)
+	(rect 200 2336 395 2352)
+	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
+	(text "DSP1INRSV_SW" (rect 90 0 189 14)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 376 2336 424 2352))
 )
 (symbol
 	(rect 696 2016 840 2096)
@@ -6528,170 +6528,6 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 2568 1944 2704 2136)
-	(text "clk_sync_exchanger" (rect 5 0 153 14)(font "Arial" ))
-	(text "inst104" (rect 8 176 65 190)(font "Arial" ))
-	(port
-		(pt 0 48)
-		(input)
-		(text "a_bck_i" (rect 0 0 57 14)(font "Arial" ))
-		(text "a_bck_i" (rect 21 43 78 57)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "a_lrck_i" (rect 0 0 66 14)(font "Arial" ))
-		(text "a_lrck_i" (rect 21 59 87 73)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 0 32)
-		(input)
-		(text "a_mck_i" (rect 0 0 57 14)(font "Arial" ))
-		(text "a_mck_i" (rect 21 27 78 41)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 104)
-		(input)
-		(text "m_bck_i" (rect 0 0 57 14)(font "Arial" ))
-		(text "m_bck_i" (rect 21 99 78 113)(font "Arial" ))
-		(line (pt 0 104)(pt 16 104))
-	)
-	(port
-		(pt 0 120)
-		(input)
-		(text "m_lrck_i" (rect 0 0 66 14)(font "Arial" ))
-		(text "m_lrck_i" (rect 21 115 87 129)(font "Arial" ))
-		(line (pt 0 120)(pt 16 120))
-	)
-	(port
-		(pt 0 88)
-		(input)
-		(text "m_mck_i" (rect 0 0 57 14)(font "Arial" ))
-		(text "m_mck_i" (rect 21 83 78 97)(font "Arial" ))
-		(line (pt 0 88)(pt 16 88))
-	)
-	(port
-		(pt 0 144)
-		(input)
-		(text "mute_i" (rect 0 0 49 14)(font "Arial" ))
-		(text "mute_i" (rect 21 139 70 153)(font "Arial" ))
-		(line (pt 0 144)(pt 16 144))
-	)
-	(port
-		(pt 0 160)
-		(input)
-		(text "nrst_i" (rect 0 0 49 14)(font "Arial" ))
-		(text "nrst_i" (rect 21 155 70 169)(font "Arial" ))
-		(line (pt 0 160)(pt 16 160))
-	)
-	(port
-		(pt 136 48)
-		(output)
-		(text "bck_o" (rect -48 0 -7 14)(font "Arial" ))
-		(text "bck_o" (rect 91 43 132 57)(font "Arial" ))
-		(line (pt 136 48)(pt 120 48))
-	)
-	(port
-		(pt 136 64)
-		(output)
-		(text "lrck_o" (rect -48 0 1 14)(font "Arial" ))
-		(text "lrck_o" (rect 91 59 140 73)(font "Arial" ))
-		(line (pt 136 64)(pt 120 64))
-	)
-	(port
-		(pt 136 32)
-		(output)
-		(text "mck_o" (rect -48 0 -7 14)(font "Arial" ))
-		(text "mck_o" (rect 88 27 129 41)(font "Arial" ))
-		(line (pt 136 32)(pt 120 32))
-	)
-	(port
-		(pt 136 80)
-		(output)
-		(text "nclkmute_o" (rect -48 0 34 14)(font "Arial" ))
-		(text "nclkmute_o" (rect 68 75 150 89)(font "Arial" ))
-		(line (pt 136 80)(pt 120 80))
-	)
-	(port
-		(pt 136 96)
-		(output)
-		(text "ndatmute_o" (rect -48 0 34 14)(font "Arial" ))
-		(text "ndatmute_o" (rect 67 91 149 105)(font "Arial" ))
-		(line (pt 136 96)(pt 120 96))
-	)
-	(parameter
-		"USE_MUTE_BCK_AND_LRCK"
-		"no"
-		"\"yse\": Use 3 mute clock.\"no\": Use m_mck_i only. "
-		(type "PARAMETER_STRING")	)
-	(parameter
-		"clk_mute_delay_cnt_width"
-		"10"
-		"Clock mute in delay time counter width"
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(rectangle (rect 16 16 120 176))
-	)
-	(annotation_block (parameter)(rect 2568 1864 3008 1920))
-)
-(symbol
-	(rect 2904 1984 3048 2080)
-	(text "timing_aligner" (rect 5 0 120 14)(font "Arial" (color 128 0 128)))
-	(text "inst111" (rect 8 80 65 94)(font "Arial" (color 128 0 128)))
-	(port
-		(pt 0 48)
-		(input)
-		(text "dat_i[width-1..0]" (rect 0 0 140 14)(font "Arial" ))
-		(text "dat_i[width-1..0]" (rect 21 43 161 57)(font "Arial" (color 128 0 128)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "clr_i" (rect 0 0 41 14)(font "Arial" ))
-		(text "clr_i" (rect 21 59 62 73)(font "Arial" (color 128 0 128)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk_i" (rect 0 0 41 14)(font "Arial" ))
-		(text "clk_i" (rect 29 27 70 41)(font "Arial" (color 128 0 128))(invisible))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 144 32)
-		(output)
-		(text "dat_o[width-1..0]" (rect -152 0 -12 14)(font "Arial" ))
-		(text "dat_o[width-1..0]" (rect 55 27 195 41)(font "Arial" (color 128 0 128)))
-		(line (pt 144 32)(pt 128 32)(line_width 3))
-	)
-	(parameter
-		"launchedge"
-		"1"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"latchedge"
-		"0"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"width"
-		"1"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(line (pt 16 24)(pt 24 32)(color 0 0 0))
-		(line (pt 16 40)(pt 24 32)(color 0 0 0))
-		(rectangle (rect 16 16 128 80)(color 0 0 0))
-	)
-	(annotation_block (parameter)(rect 2912 2080 3100 2136))
-)
-(symbol
 	(rect 2976 64 3056 144)
 	(text "MUX2in" (rect 19 0 96 18)(font "Arial" (font_size 10)))
 	(text "inst18" (rect 8 64 57 78)(font "Arial" ))
@@ -8636,21 +8472,6 @@ agreement for further details.
 	(pt 4264 128)
 )
 (connector
-	(text "Z2_NET/USB" (rect 4098 120 4180 134)(font "Arial" ))
-	(pt 4160 128)
-	(pt 4264 128)
-)
-(connector
-	(text "NET/USB" (rect 4434 1744 4491 1758)(font "Arial" ))
-	(pt 4736 1752)
-	(pt 4488 1752)
-)
-(connector
-	(text "/DIR_HDMI" (rect 4426 1704 4500 1718)(font "Arial" ))
-	(pt 4648 1712)
-	(pt 4488 1712)
-)
-(connector
 	(text "DSD" (rect 1666 1480 1690 1494)(font "Arial" ))
 	(pt 1688 1496)
 	(pt 1768 1496)
@@ -8663,11 +8484,6 @@ agreement for further details.
 	(text "DSD" (rect 2770 736 2794 750)(font "Arial" ))
 	(pt 2800 744)
 	(pt 2904 744)
-)
-(connector
-	(text "NET/USB" (rect 2754 752 2811 766)(font "Arial" ))
-	(pt 2904 760)
-	(pt 2800 760)
 )
 (connector
 	(text "DSD" (rect 2378 208 2402 222)(font "Arial" ))
@@ -8685,38 +8501,13 @@ agreement for further details.
 	(pt 3904 2064)
 )
 (connector
-	(text "NET/USB" (rect 3858 2096 3915 2110)(font "Arial" ))
-	(pt 4096 2104)
-	(pt 3904 2104)
-)
-(connector
 	(text "DSD" (rect 6274 2088 6298 2102)(font "Arial" ))
 	(pt 6256 2104)
 	(pt 6416 2104)
 )
 (connector
-	(text "NET/USB" (rect 6274 2104 6331 2118)(font "Arial" ))
-	(pt 6256 2120)
-	(pt 6416 2120)
-)
-(connector
-	(text "NET/USB" (rect 6586 2184 6643 2198)(font "Arial" ))
-	(pt 6808 2192)
-	(pt 6640 2192)
-)
-(connector
-	(text "NET/USB" (rect 4082 1384 4139 1398)(font "Arial" ))
-	(pt 4376 1392)
-	(pt 4136 1392)
-)
-(connector
 	(pt 4376 1368)
 	(pt 4376 1360)
-)
-(connector
-	(text "/DIR_HDMI" (rect 4082 1352 4156 1366)(font "Arial" ))
-	(pt 4376 1360)
-	(pt 4136 1360)
 )
 (connector
 	(text "DIR_MUTE" (rect 4082 1320 4148 1334)(font "Arial" ))
@@ -8729,34 +8520,9 @@ agreement for further details.
 	(pt 4136 1304)
 )
 (connector
-	(text "/ERRMUTE" (rect 4082 1496 4148 1510)(font "Arial" ))
-	(pt 4320 1504)
-	(pt 4136 1504)
-)
-(connector
-	(text "NET/USB" (rect 1442 1480 1499 1494)(font "Arial" ))
-	(pt 1464 1496)
-	(pt 1536 1496)
-)
-(connector
-	(text "NET/USB" (rect 2898 632 2955 646)(font "Arial" ))
-	(pt 2888 648)
-	(pt 3016 648)
-)
-(connector
 	(text "DUMMY_SIG_SEL" (rect 3146 648 3253 662)(font "Arial" ))
 	(pt 3096 648)
 	(pt 3168 648)
-)
-(connector
-	(text "NET/USB" (rect 3010 488 3067 502)(font "Arial" ))
-	(pt 3056 496)
-	(pt 3112 496)
-)
-(connector
-	(text "NET/USB" (rect 2866 1112 2923 1126)(font "Arial" ))
-	(pt 2912 1120)
-	(pt 2968 1120)
 )
 (connector
 	(text "CLK_SEL" (rect 194 2040 251 2054)(font "Arial" ))
@@ -8764,29 +8530,9 @@ agreement for further details.
 	(pt 240 2048)
 )
 (connector
-	(text "/DIR_HDMI" (rect 184 2080 258 2094)(font "Arial" ))
-	(pt 296 2088)
-	(pt 240 2088)
-)
-(connector
 	(text "HDMI_A_SEL" (rect 6074 584 6156 598)(font "Arial" ))
 	(pt 6200 592)
 	(pt 6136 592)
-)
-(connector
-	(text "/DIR_HDMI" (rect 6170 1232 6244 1246)(font "Arial" ))
-	(pt 6224 1240)
-	(pt 6280 1240)
-)
-(connector
-	(text "/DIR_HDMI" (rect 1858 168 1932 182)(font "Arial" ))
-	(pt 1856 184)
-	(pt 1928 184)
-)
-(connector
-	(text "/DIR_HDMI" (rect 1626 736 1700 750)(font "Arial" ))
-	(pt 1688 744)
-	(pt 2560 744)
 )
 (connector
 	(text "DIR_MUTE" (rect 1474 696 1540 710)(font "Arial" ))
@@ -8961,11 +8707,6 @@ agreement for further details.
 	(pt 2952 104)
 )
 (connector
-	(text "NET/USB" (rect 2898 160 2955 174)(font "Arial" ))
-	(pt 2944 168)
-	(pt 3016 168)
-)
-(connector
 	(pt 2952 104)
 	(pt 2976 104)
 )
@@ -9008,12 +8749,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "INfsSEL[1..0], RX_AUDIO_SEL, Z2_NET/USB, DSPBYPASS, DSD, NET/USB, CLK_SEL, /DA_POWER_MUTE, HDMI_A_SEL, /ERRMUTE, /DIR_HDMI, DIR_MUTE, DUMMY_SIG_SEL, Reserve, BS_MUTE" (rect 632 88 1994 102)(font "Arial" )(invisible))
-	(pt 632 104)
-	(pt 728 104)
-	(bus)
-)
-(connector
 	(pt 6472 1184)
 	(pt 6472 1296)
 )
@@ -9035,16 +8770,6 @@ agreement for further details.
 	(pt 7096 1904)
 )
 (connector
-	(text "/DA_POWER_MUTE" (rect 6130 1288 6245 1302)(font "Arial" ))
-	(pt 6472 1296)
-	(pt 6224 1296)
-)
-(connector
-	(text "/DA_POWER_MUTE" (rect 1586 504 1701 518)(font "Arial" ))
-	(pt 1680 512)
-	(pt 2168 512)
-)
-(connector
 	(pt 1960 552)
 	(pt 1960 568)
 )
@@ -9053,43 +8778,8 @@ agreement for further details.
 	(pt 1960 608)
 )
 (connector
-	(text "/DA_POWER_MUTE" (rect 6546 2168 6661 2182)(font "Arial" ))
-	(pt 6808 2176)
-	(pt 6640 2176)
-)
-(connector
-	(text "/DA_POWER_MUTE" (rect 2498 2680 2613 2694)(font "Arial" ))
-	(pt 2488 2696)
-	(pt 2768 2696)
-)
-(connector
-	(text "/DA_POWER_MUTE" (rect 4034 2904 4149 2918)(font "Arial" ))
-	(pt 4248 2912)
-	(pt 4128 2912)
-)
-(connector
 	(pt 5464 2816)
 	(pt 5464 2952)
-)
-(connector
-	(text "/DA_POWER_MUTE" (rect 5250 2944 5365 2958)(font "Arial" ))
-	(pt 5464 2952)
-	(pt 5344 2952)
-)
-(connector
-	(text "/DA_POWER_MUTE" (rect 4762 2512 4877 2526)(font "Arial" ))
-	(pt 4976 2520)
-	(pt 4856 2520)
-)
-(connector
-	(text "/DA_POWER_MUTE" (rect 3082 1960 3197 1974)(font "Arial" ))
-	(pt 3176 1968)
-	(pt 3280 1968)
-)
-(connector
-	(text "/DA_POWER_MUTE" (rect 4474 296 4589 310)(font "Arial" ))
-	(pt 4568 304)
-	(pt 4688 304)
 )
 (connector
 	(text "MCLK_I2S_0" (rect 4010 368 4092 382)(font "Arial" ))
@@ -9255,11 +8945,6 @@ agreement for further details.
 (connector
 	(pt 1232 1496)
 	(pt 1232 1448)
-)
-(connector
-	(text "/DIR_HDMI" (rect 1106 1480 1180 1494)(font "Arial" ))
-	(pt 1120 1496)
-	(pt 1160 1496)
 )
 (connector
 	(pt 1160 1496)
@@ -9502,6 +9187,157 @@ agreement for further details.
 	(pt 4384 2456)
 	(pt 4408 2456)
 )
+(connector
+	(text "INfsSEL[1..0], RX_AUDIO_SEL, Z2_NETUSB, DSPBYPASS, DSD, NETUSB, CLK_SEL, nDA_POWER_MUTE, HDMI_A_SEL, nERRMUTE, nDIR_HDMI, DIR_MUTE, DUMMY_SIG_SEL, Reserve, BS_MUTE" (rect 632 88 1978 102)(font "Arial" )(invisible))
+	(pt 632 104)
+	(pt 728 104)
+	(bus)
+)
+(connector
+	(text "Z2_NETUSB" (rect 4098 120 4172 134)(font "Arial" ))
+	(pt 4160 128)
+	(pt 4264 128)
+)
+(connector
+	(text "NETUSB" (rect 2754 752 2803 766)(font "Arial" ))
+	(pt 2904 760)
+	(pt 2800 760)
+)
+(connector
+	(text "NETUSB" (rect 3858 2096 3907 2110)(font "Arial" ))
+	(pt 4096 2104)
+	(pt 3904 2104)
+)
+(connector
+	(text "NETUSB" (rect 6274 2104 6323 2118)(font "Arial" ))
+	(pt 6256 2120)
+	(pt 6416 2120)
+)
+(connector
+	(text "NETUSB" (rect 4082 1384 4131 1398)(font "Arial" ))
+	(pt 4376 1392)
+	(pt 4136 1392)
+)
+(connector
+	(text "NETUSB" (rect 1442 1480 1491 1494)(font "Arial" ))
+	(pt 1464 1496)
+	(pt 1536 1496)
+)
+(connector
+	(text "NETUSB" (rect 3010 488 3059 502)(font "Arial" ))
+	(pt 3056 496)
+	(pt 3112 496)
+)
+(connector
+	(text "NETUSB" (rect 2898 160 2947 174)(font "Arial" ))
+	(pt 2944 168)
+	(pt 3016 168)
+)
+(connector
+	(text "NETUSB" (rect 4434 1744 4483 1758)(font "Arial" ))
+	(pt 4736 1752)
+	(pt 4488 1752)
+)
+(connector
+	(text "NETUSB" (rect 6586 2184 6635 2198)(font "Arial" ))
+	(pt 6808 2192)
+	(pt 6640 2192)
+)
+(connector
+	(text "NETUSB" (rect 2898 632 2947 646)(font "Arial" ))
+	(pt 2888 648)
+	(pt 3016 648)
+)
+(connector
+	(text "NETUSB" (rect 2866 1112 2915 1126)(font "Arial" ))
+	(pt 2912 1120)
+	(pt 2968 1120)
+)
+(connector
+	(text "nDIR_HDMI" (rect 4426 1704 4500 1718)(font "Arial" ))
+	(pt 4648 1712)
+	(pt 4488 1712)
+)
+(connector
+	(text "nDIR_HDMI" (rect 4082 1352 4156 1366)(font "Arial" ))
+	(pt 4376 1360)
+	(pt 4136 1360)
+)
+(connector
+	(text "nDIR_HDMI" (rect 184 2080 258 2094)(font "Arial" ))
+	(pt 296 2088)
+	(pt 240 2088)
+)
+(connector
+	(text "nDIR_HDMI" (rect 6170 1232 6244 1246)(font "Arial" ))
+	(pt 6224 1240)
+	(pt 6280 1240)
+)
+(connector
+	(text "nDA_POWER_MUTE" (rect 6130 1288 6245 1302)(font "Arial" ))
+	(pt 6472 1296)
+	(pt 6224 1296)
+)
+(connector
+	(text "nDIR_HDMI" (rect 1626 736 1700 750)(font "Arial" ))
+	(pt 1688 744)
+	(pt 2560 744)
+)
+(connector
+	(text "nDIR_HDMI" (rect 1106 1480 1180 1494)(font "Arial" ))
+	(pt 1120 1496)
+	(pt 1160 1496)
+)
+(connector
+	(text "nDIR_HDMI" (rect 1858 168 1932 182)(font "Arial" ))
+	(pt 1856 184)
+	(pt 1928 184)
+)
+(connector
+	(text "nERRMUTE" (rect 4082 1496 4148 1510)(font "Arial" ))
+	(pt 4320 1504)
+	(pt 4136 1504)
+)
+(connector
+	(text "nDA_POWER_MUTE" (rect 1586 504 1701 518)(font "Arial" ))
+	(pt 1680 512)
+	(pt 2168 512)
+)
+(connector
+	(text "nDA_POWER_MUTE" (rect 6546 2168 6661 2182)(font "Arial" ))
+	(pt 6808 2176)
+	(pt 6640 2176)
+)
+(connector
+	(text "nDA_POWER_MUTE" (rect 2498 2680 2613 2694)(font "Arial" ))
+	(pt 2488 2696)
+	(pt 2768 2696)
+)
+(connector
+	(text "nDA_POWER_MUTE" (rect 5250 2944 5365 2958)(font "Arial" ))
+	(pt 5464 2952)
+	(pt 5344 2952)
+)
+(connector
+	(text "nDA_POWER_MUTE" (rect 3082 1960 3197 1974)(font "Arial" ))
+	(pt 3176 1968)
+	(pt 3280 1968)
+)
+(connector
+	(text "nDA_POWER_MUTE" (rect 4034 2904 4149 2918)(font "Arial" ))
+	(pt 4248 2912)
+	(pt 4128 2912)
+)
+(connector
+	(text "nDA_POWER_MUTE" (rect 4762 2512 4877 2526)(font "Arial" ))
+	(pt 4976 2520)
+	(pt 4856 2520)
+)
+(connector
+	(text "nDA_POWER_MUTE" (rect 4474 296 4589 310)(font "Arial" ))
+	(pt 4568 304)
+	(pt 4688 304)
+)
 (junction (pt 3280 1848))
 (junction (pt 3280 1624))
 (junction (pt 4880 216))
@@ -9644,12 +9480,10 @@ agreement for further details.
 (text "1/32" (rect 2648 314 2685 330)(font "Arial" (font_size 8)))
 (text "1/64" (rect 2648 330 2685 346)(font "Arial" (font_size 8)))
 (text "Z2DACMUTE (MUTE ON: 0, MUTE OFF: 1)" (rect 5184 184 5514 200)(font "Arial" (font_size 8)))
-(text "NET/USB" (rect 856 240 922 256)(font "Arial" (font_size 8)))
 (text "1 : NET/USB                                       0 :  OTHER" (rect 952 240 1518 256)(font "Arial" (font_size 8)))
 (text "CLK_SEL" (rect 856 264 922 280)(font "Arial" (font_size 8)))
 (text "1 : MUTE ON            0 : MUTE OFF" (rect 952 264 1282 280)(font "Arial" (font_size 8)))
 (text "DSD" (rect 864 216 892 232)(font "Arial" (font_size 8)))
-(text "Z2_NET/USB" (rect 840 168 934 184)(font "Arial" (font_size 8)))
 (text "ZONE2 PLAYBACK1 : NET/USB FUNCTION                 0 :  OTHER" (rect 952 168 1527 184)(font "Arial" (font_size 8)))
 (text "1 :  DSP MODE                                 0 :  PASS MODE" (rect 952 192 1518 208)(font "Arial" (font_size 8)))
 (text "TV MODE          1 :  DSP MODE           0 :  PASS MODE" (rect 952 312 1471 328)(font "Arial" (font_size 8)))
@@ -9711,13 +9545,15 @@ agreement for further details.
 (text "to DSP (1)" (rect 64 2232 335 2269)(font "Arial" (font_size 20)))
 (text "Test Point (8)" (rect 496 2720 875 2757)(font "Arial" (font_size 20)))
 (text "from DSP (1)" (rect 64 2480 389 2517)(font "Arial" (font_size 20)))
-(text "DA_POWER_MUTE" (rect 840 288 962 304)(font "Arial" (font_size 8)))
-(text "/DIR_HDMI" (rect 856 360 940 376)(font "Arial" (font_size 8)))
-(text "/ERRMUTE" (rect 856 336 931 352)(font "Arial" (font_size 8)))
 (text "DSPBYPASS" (rect 840 192 924 208)(font "Arial" (font_size 8)))
 (text "5-Sep.-'16" (rect 192 632 286 648)(font "Arial" (color 0 128 0)(font_size 8)))
 (text "H.Niimura" (rect 256 632 340 648)(font "Arial" (color 0 128 0)(font_size 8)))
 (text "Designed tool : Quartus Prime 16.0 Lite Edition" (rect 336 -80 1611 -43)(font "Arial" (color 128 0 128)(font_size 20)))
+(text "NETUSB" (rect 856 240 912 256)(font "Arial" (font_size 8)))
+(text "Z2_NETUSB" (rect 840 168 924 184)(font "Arial" (font_size 8)))
+(text "nDIR_HDMI" (rect 856 360 940 376)(font "Arial" (font_size 8)))
+(text "nERRMUTE" (rect 856 336 931 352)(font "Arial" (font_size 8)))
+(text "nDA_POWER_MUTE" (rect 840 288 972 304)(font "Arial" (font_size 8)))
 (line (pt 2592 248)(pt 2712 248))
 (line (pt 2592 264)(pt 2712 264))
 (line (pt 2592 280)(pt 2712 280))

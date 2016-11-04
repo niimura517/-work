@@ -23,7 +23,6 @@ DIRXMCK => MUX2in:inst40.data1
 DIRXMCK => ADC_CLK_GEN:inst63.MCK_in
 DIRXMCK => ADC_FS_Manager:inst206.CLK
 DIRXMCK => ADCMCKSEL:inst102._24M
-DSP1IN_/SW <= <GND>
 PLDADCMCK <= MUX2in:inst75.result
 PLDADCBCK <= MUX2in:inst76.result
 PLDADCLRCK <= MUX2in:inst77.result
@@ -99,6 +98,7 @@ MPIO_B1 <= inst197.DB_MAX_OUTPUT_PORT_TYPE
 MPIO_B2 <= inst198.DB_MAX_OUTPUT_PORT_TYPE
 MPIO_B3 <= inst199.DB_MAX_OUTPUT_PORT_TYPE
 Z2DACMUTE <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+DSP1INRSV_SW <= <GND>
 SLRCK => ~NO_FANOUT~
 SBCK => ~NO_FANOUT~
 GPIO_2 => ~NO_FANOUT~
@@ -1366,71 +1366,6 @@ data[1] => result_node[0].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 sel[0] => result_node[0].IN0
 sel[0] => _.IN0
-
-
-|AVRX1400H|clk_sync_exchanger:inst104
-a_mck_i => mck_o.DATAB
-a_bck_i => bck_o.DATAB
-a_bck_i => dat_launch_q2.CLK
-a_bck_i => ndatmute_o~reg0.CLK
-a_lrck_i => clk_launch_clk.DATAB
-a_lrck_i => clk_latch_clk.DATAA
-a_lrck_i => mux_a_lrck.DATAB
-a_lrck_i => dat_launch_clk.DATAB
-a_lrck_i => dat_latch_clk.DATAA
-m_mck_i => mck_o.DATAA
-m_mck_i => m_mck_div[0].CLK
-m_mck_i => m_mck_div[1].CLK
-m_mck_i => m_mck_div[2].CLK
-m_mck_i => m_mck_div[3].CLK
-m_mck_i => m_mck_div[4].CLK
-m_mck_i => m_mck_div[5].CLK
-m_mck_i => m_mck_div[6].CLK
-m_bck_i => ~NO_FANOUT~
-m_lrck_i => ~NO_FANOUT~
-nrst_i => always1.IN1
-nrst_i => nclkmute_o.IN1
-nrst_i => ndatmute.IN1
-nrst_i => m_mck_div[0].ACLR
-nrst_i => m_mck_div[1].ACLR
-nrst_i => m_mck_div[2].ACLR
-nrst_i => m_mck_div[3].ACLR
-nrst_i => m_mck_div[4].ACLR
-nrst_i => m_mck_div[5].ACLR
-nrst_i => m_mck_div[6].ACLR
-nrst_i => ndatmute_o~reg0.ACLR
-nrst_i => clk_launch_q.ACLR
-nrst_i => clk_latch_q.ACLR
-nrst_i => dat_launch_q.PRESET
-nrst_i => dat_latch_q.ACLR
-nrst_i => dat_launch_q2.ACLR
-mute_i => always1.IN1
-mute_i => dat_launch_q.DATAIN
-mute_i => d_cnt[0].ACLR
-mute_i => d_cnt[1].ACLR
-mute_i => d_cnt[2].ACLR
-mute_i => d_cnt[3].ACLR
-mute_i => d_cnt[4].ACLR
-mute_i => d_cnt[5].ACLR
-mute_i => d_cnt[6].ACLR
-mute_i => d_cnt[7].ACLR
-mute_i => d_cnt[8].ACLR
-mute_i => d_cnt[9].ACLR
-mute_i => d_cnt[10].ACLR
-mck_o <= mck_o.DB_MAX_OUTPUT_PORT_TYPE
-bck_o <= bck_o.DB_MAX_OUTPUT_PORT_TYPE
-lrck_o <= lrck_o.DB_MAX_OUTPUT_PORT_TYPE
-nclkmute_o <= nclkmute_o.DB_MAX_OUTPUT_PORT_TYPE
-ndatmute_o <= ndatmute_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|AVRX1400H|timing_aligner:inst111
-clk_i => q[0].CLK
-clk_i => dat_o[0]~reg0.CLK
-dat_i[0] => q[0].DATAIN
-dat_o[0] <= dat_o[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-clr_i => dat_o[0]~reg0.ACLR
-clr_i => q[0].ACLR
 
 
 |AVRX1400H|lpm_and_wrapper:inst86

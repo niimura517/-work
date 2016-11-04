@@ -71,8 +71,6 @@ set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER OFF -to AP_CK
 set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER OFF -to AP_DA
 set_instance_assignment -name FAST_OUTPUT_REGISTER OFF -to AP_CK
 set_instance_assignment -name FAST_OUTPUT_REGISTER OFF -to AP_DA
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to DSP1IN_/SW
-set_instance_assignment -name SLOW_SLEW_RATE ON -to DSP1IN_/SW
 set_instance_assignment -name SLOW_SLEW_RATE ON -to DSP1INMCK
 set_instance_assignment -name SLOW_SLEW_RATE ON -to PLDADCBCK
 set_instance_assignment -name SLOW_SLEW_RATE ON -to PLDADCLRCK
@@ -104,7 +102,6 @@ set_location_assignment PIN_L14 -to DIRNPCM
 set_location_assignment PIN_L13 -to DIRPERR
 set_location_assignment PIN_L15 -to DIRXMCK
 set_location_assignment PIN_A5 -to DSP1FLAG3
-set_location_assignment PIN_C5 -to DSP1IN_/SW
 set_location_assignment PIN_A6 -to DSP1INBCK
 set_location_assignment PIN_A8 -to DSP1INF_FL
 set_location_assignment PIN_C7 -to DSP1INLRCK
@@ -279,3 +276,6 @@ set_global_assignment -name SEARCH_PATH rtl/megafunction/verilog/ -tag from_arch
 set_global_assignment -name SEARCH_PATH rtl/verilog/ -tag from_archive
 set_global_assignment -name SEARCH_PATH rtl/VHDL/ -tag from_archive
 set_global_assignment -name SEARCH_PATH rtl/bdf/ -tag from_archive
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to DSP1INRSV_SW
+set_instance_assignment -name SLOW_SLEW_RATE ON -to DSP1INRSV_SW
+set_location_assignment PIN_C5 -to DSP1INRSV_SW
