@@ -1,5 +1,5 @@
 Fitter report for AVRX1400H
-Fri Nov 04 11:02:41 2016
+Thu Jan 12 09:50:43 2017
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -57,7 +57,7 @@ agreement for further details.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Fri Nov 04 11:02:41 2016       ;
+; Fitter Status         ; Successful - Thu Jan 12 09:50:43 2017       ;
 ; Quartus Prime Version ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name         ; AVRX1400H                                   ;
 ; Top-level Entity Name ; AVRX1400H                                   ;
@@ -134,7 +134,7 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.8%      ;
+;     Processor 2            ;   2.6%      ;
 +----------------------------+-------------+
 
 
@@ -231,9 +231,9 @@ The pin-out file can be found in C:/Users/Hidemi.Niimura/Documents/-work/60.xx_A
 ; DSP1OUTS    ; A9    ; 2        ; 7            ; 8            ; 1           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
 ; DSP1OUTSB   ; C10   ; 2        ; 9            ; 8            ; 2           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
 ; DZF1        ; M9    ; 1        ; 8            ; 3            ; 2           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
-; GPIO_0      ; G1    ; 1        ; 0            ; 6            ; 0           ; 3                     ; 0                  ; no     ; no              ; no       ; On           ; 3.3-V LVTTL  ; User                 ; no             ;
-; GPIO_1      ; G2    ; 1        ; 0            ; 7            ; 5           ; 0                     ; 0                  ; no     ; no              ; no       ; On           ; 3.3-V LVTTL  ; User                 ; no             ;
-; GPIO_2      ; G3    ; 1        ; 0            ; 6            ; 1           ; 0                     ; 0                  ; no     ; no              ; no       ; On           ; 3.3-V LVTTL  ; User                 ; no             ;
+; GPIO_0      ; G1    ; 1        ; 0            ; 6            ; 0           ; 3                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
+; GPIO_1      ; G2    ; 1        ; 0            ; 7            ; 5           ; 0                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
+; GPIO_2      ; G3    ; 1        ; 0            ; 6            ; 1           ; 0                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
 ; LRCK_I2S_0  ; L2    ; 1        ; 0            ; 4            ; 4           ; 3                     ; 0                  ; no     ; no              ; no       ; On           ; 3.3-V LVTTL  ; User                 ; no             ;
 ; LRCK_I2S_1  ; K3    ; 1        ; 0            ; 5            ; 2           ; 1                     ; 0                  ; no     ; no              ; no       ; On           ; 3.3-V LVTTL  ; User                 ; no             ;
 ; MCLK_I2S_0  ; L1    ; 1        ; 0            ; 4            ; 2           ; 2                     ; 0                  ; no     ; no              ; no       ; On           ; 3.3-V LVTTL  ; User                 ; no             ;
@@ -413,9 +413,9 @@ The pin-out file can be found in C:/Users/Hidemi.Niimura/Documents/-work/60.xx_A
 ; F14      ; 108        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F15      ; 115        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F16      ; 113        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; G1       ; 13         ; 1        ; GPIO_0                          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; On           ;
-; G2       ; 11         ; 1        ; GPIO_1                          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; On           ;
-; G3       ; 14         ; 1        ; GPIO_2                          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; On           ;
+; G1       ; 13         ; 1        ; GPIO_0                          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; G2       ; 11         ; 1        ; GPIO_1                          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; G3       ; 14         ; 1        ; GPIO_2                          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; G4       ;            ;          ; NC                              ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; G5       ;            ;          ; NC                              ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; G6       ;            ;          ; NC                              ;        ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1024,9 +1024,9 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/AVRX1400H.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 1097 megabytes
-    Info: Processing ended: Fri Nov 04 11:02:41 2016
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 1095 megabytes
+    Info: Processing ended: Thu Jan 12 09:50:43 2017
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 
 

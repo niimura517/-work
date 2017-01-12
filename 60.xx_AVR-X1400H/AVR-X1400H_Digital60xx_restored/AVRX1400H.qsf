@@ -54,7 +54,7 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_global_assignment -name AUTO_RESTART_CONFIGURATION OFF
-set_global_assignment -name STRATIX_JTAG_USER_CODE FFFF6002
+set_global_assignment -name STRATIX_JTAG_USER_CODE FFFF6003
 set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
 set_global_assignment -name AUTO_PACKED_REGISTERS_MAX OFF
 set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
@@ -76,8 +76,6 @@ set_instance_assignment -name SLOW_SLEW_RATE ON -to PLDADCBCK
 set_instance_assignment -name SLOW_SLEW_RATE ON -to PLDADCLRCK
 set_instance_assignment -name SLOW_SLEW_RATE ON -to PLDADCMCK
 set_instance_assignment -name SLOW_SLEW_RATE ON -to TXI2S0
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to GPIO_1
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to GPIO_2
 set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to TXI2S0
 set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to PLDADCMCK
 set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to PLDADCLRCK
@@ -187,7 +185,6 @@ set_instance_assignment -name SLOW_SLEW_RATE ON -to SDIN_I2S_2
 set_instance_assignment -name SLOW_SLEW_RATE ON -to SCLK_I2S_2
 set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to SDIN_I2S_2
 set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to SCLK_I2S_2
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to GPIO_0
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SDIN_I2S_2
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SCLK_I2S_2
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SCLK_I2S_1
@@ -250,6 +247,9 @@ set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STI
 set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to SDOUT_I2S_2
 set_location_assignment PIN_H3 -to SDOUT_I2S_2
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SDOUT_I2S_2
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to DSP1INRSV_SW
+set_instance_assignment -name SLOW_SLEW_RATE ON -to DSP1INRSV_SW
+set_location_assignment PIN_C5 -to DSP1INRSV_SW
 set_global_assignment -name BDF_FILE rtl/bdf/AVRX1400H.bdf
 set_global_assignment -name VHDL_FILE rtl/VHDL/lpm_ff5.vhd
 set_global_assignment -name VHDL_FILE rtl/VHDL/lpm_ff1.vhd
@@ -276,6 +276,3 @@ set_global_assignment -name SEARCH_PATH rtl/megafunction/verilog/ -tag from_arch
 set_global_assignment -name SEARCH_PATH rtl/verilog/ -tag from_archive
 set_global_assignment -name SEARCH_PATH rtl/VHDL/ -tag from_archive
 set_global_assignment -name SEARCH_PATH rtl/bdf/ -tag from_archive
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to DSP1INRSV_SW
-set_instance_assignment -name SLOW_SLEW_RATE ON -to DSP1INRSV_SW
-set_location_assignment PIN_C5 -to DSP1INRSV_SW
