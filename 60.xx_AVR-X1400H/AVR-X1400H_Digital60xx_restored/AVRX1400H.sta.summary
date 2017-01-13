@@ -3,83 +3,83 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'LEGOBCK_DSD128_0'
-Slack : 12.775
+Slack : 1.109
 TNS   : 0.000
 
 Type  : Slow Model Setup 'DACBCK_LEGOBCK_192K'
-Slack : 17.900
-TNS   : 0.000
-
-Type  : Slow Model Setup 'LEGOBCK_DSD128TDM'
-Slack : 24.720
-TNS   : 0.000
-
-Type  : Slow Model Setup 'Z2DACBCK_LEGOBCK_192K'
-Slack : 26.619
+Slack : 9.430
 TNS   : 0.000
 
 Type  : Slow Model Setup 'DACBCK_DSP1OUTBCK_192K'
-Slack : 28.062
+Slack : 18.788
 TNS   : 0.000
 
 Type  : Slow Model Setup 'DIRXMCK'
-Slack : 29.982
+Slack : 26.158
+TNS   : 0.000
+
+Type  : Slow Model Setup 'LEGOBCK_DSD128TDM'
+Slack : 26.167
+TNS   : 0.000
+
+Type  : Slow Model Setup 'Z2DACBCK_LEGOBCK_192K'
+Slack : 29.823
 TNS   : 0.000
 
 Type  : Slow Model Setup 'LEGOBCK_192K'
-Slack : 73.988
+Slack : 72.857
 TNS   : 0.000
 
 Type  : Slow Model Setup 'SPICLK'
-Slack : 905.225
+Slack : 905.090
 TNS   : 0.000
 
 Type  : Slow Model Setup 'SPICS'
-Slack : 983.704
+Slack : 979.725
 TNS   : 0.000
 
 Type  : Slow Model Setup 'DIRLRCK_192K'
-Slack : 5187.520
+Slack : 5185.619
 TNS   : 0.000
 
 Type  : Slow Model Hold 'SPICLK'
 Slack : 3.105
 TNS   : 0.000
 
+Type  : Slow Model Hold 'LEGOBCK_DSD128_0'
+Slack : 3.164
+TNS   : 0.000
+
 Type  : Slow Model Hold 'LEGOBCK_DSD128TDM'
-Slack : 3.193
+Slack : 3.179
 TNS   : 0.000
 
 Type  : Slow Model Hold 'DIRXMCK'
 Slack : 3.350
 TNS   : 0.000
 
-Type  : Slow Model Hold 'LEGOBCK_192K'
-Slack : 3.421
-TNS   : 0.000
-
-Type  : Slow Model Hold 'LEGOBCK_DSD128_0'
-Slack : 3.428
-TNS   : 0.000
-
 Type  : Slow Model Hold 'SPICS'
-Slack : 5.298
+Slack : 3.810
+TNS   : 0.000
+
+Type  : Slow Model Hold 'LEGOBCK_192K'
+Slack : 4.954
 TNS   : 0.000
 
 Type  : Slow Model Hold 'DIRLRCK_192K'
-Slack : 20.120
-TNS   : 0.000
-
-Type  : Slow Model Hold 'DACBCK_DSP1OUTBCK_192K'
-Slack : 28.369
+Slack : 22.021
 TNS   : 0.000
 
 Type  : Slow Model Hold 'Z2DACBCK_LEGOBCK_192K'
-Slack : 29.346
+Slack : 27.563
+TNS   : 0.000
+
+Type  : Slow Model Hold 'DACBCK_DSP1OUTBCK_192K'
+Slack : 31.466
 TNS   : 0.000
 
 Type  : Slow Model Hold 'DACBCK_LEGOBCK_192K'
-Slack : 47.480
+Slack : 55.950
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'DIRXMCK'
@@ -243,83 +243,83 @@ Slack : 23999.661
 TNS   : 0.000
 
 Type  : Fast Model Setup 'DACBCK_DSP1OUTBCK_192K'
-Slack : 23.756
-TNS   : 0.000
-
-Type  : Fast Model Setup 'Z2DACBCK_LEGOBCK_192K'
-Slack : 26.843
+Slack : 21.779
 TNS   : 0.000
 
 Type  : Fast Model Setup 'DACBCK_LEGOBCK_192K'
-Slack : 27.201
+Slack : 25.443
 TNS   : 0.000
 
-Type  : Fast Model Setup 'LEGOBCK_DSD128TDM'
-Slack : 35.249
+Type  : Fast Model Setup 'Z2DACBCK_LEGOBCK_192K'
+Slack : 27.541
 TNS   : 0.000
 
 Type  : Fast Model Setup 'LEGOBCK_DSD128_0'
-Slack : 37.258
+Slack : 34.666
+TNS   : 0.000
+
+Type  : Fast Model Setup 'LEGOBCK_DSD128TDM'
+Slack : 35.468
 TNS   : 0.000
 
 Type  : Fast Model Setup 'DIRXMCK'
-Slack : 37.612
+Slack : 36.831
 TNS   : 0.000
 
 Type  : Fast Model Setup 'LEGOBCK_192K'
-Slack : 79.154
+Slack : 78.930
 TNS   : 0.000
 
 Type  : Fast Model Setup 'SPICLK'
-Slack : 901.253
+Slack : 901.192
 TNS   : 0.000
 
 Type  : Fast Model Setup 'SPICS'
-Slack : 996.377
+Slack : 995.271
 TNS   : 0.000
 
 Type  : Fast Model Setup 'DIRLRCK_192K'
-Slack : 5203.249
+Slack : 5202.817
 TNS   : 0.000
 
 Type  : Fast Model Hold 'SPICLK'
-Slack : 0.693
+Slack : 0.692
+TNS   : 0.000
+
+Type  : Fast Model Hold 'LEGOBCK_DSD128_0'
+Slack : 0.722
 TNS   : 0.000
 
 Type  : Fast Model Hold 'LEGOBCK_DSD128TDM'
-Slack : 0.737
+Slack : 0.730
 TNS   : 0.000
 
 Type  : Fast Model Hold 'DIRXMCK'
 Slack : 0.848
 TNS   : 0.000
 
-Type  : Fast Model Hold 'LEGOBCK_DSD128_0'
-Slack : 0.883
+Type  : Fast Model Hold 'SPICS'
+Slack : 1.102
 TNS   : 0.000
 
 Type  : Fast Model Hold 'LEGOBCK_192K'
-Slack : 0.885
-TNS   : 0.000
-
-Type  : Fast Model Hold 'SPICS'
-Slack : 1.240
+Slack : 1.105
 TNS   : 0.000
 
 Type  : Fast Model Hold 'DIRLRCK_192K'
-Slack : 4.412
+Slack : 4.844
 TNS   : 0.000
 
 Type  : Fast Model Hold 'Z2DACBCK_LEGOBCK_192K'
-Slack : 31.914
+Slack : 31.444
 TNS   : 0.000
 
 Type  : Fast Model Hold 'DACBCK_DSP1OUTBCK_192K'
-Slack : 34.291
+Slack : 35.032
 TNS   : 0.000
 
 Type  : Fast Model Hold 'DACBCK_LEGOBCK_192K'
-Slack : 38.179
+Slack : 39.937
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'DIRXMCK'

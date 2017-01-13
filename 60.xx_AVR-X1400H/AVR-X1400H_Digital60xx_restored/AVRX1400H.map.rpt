@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AVRX1400H
-Thu Jan 12 09:50:38 2017
+Fri Jan 13 10:54:37 2017
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -90,12 +90,12 @@ agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Jan 12 09:50:38 2017       ;
+; Analysis & Synthesis Status ; Successful - Fri Jan 13 10:54:37 2017       ;
 ; Quartus Prime Version       ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name               ; AVRX1400H                                   ;
 ; Top-level Entity Name       ; AVRX1400H                                   ;
 ; Family                      ; MAX V                                       ;
-; Total logic elements        ; 221                                         ;
+; Total logic elements        ; 218                                         ;
 ; Total pins                  ; 83                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
@@ -226,20 +226,20 @@ agreement for further details.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Total logic elements                        ; 221        ;
-;     -- Combinational with no register       ; 87         ;
+; Total logic elements                        ; 218        ;
+;     -- Combinational with no register       ; 84         ;
 ;     -- Register only                        ; 70         ;
 ;     -- Combinational with a register        ; 64         ;
 ;                                             ;            ;
 ; Logic element usage by number of LUT inputs ;            ;
 ;     -- 4 input functions                    ; 88         ;
 ;     -- 3 input functions                    ; 21         ;
-;     -- 2 input functions                    ; 37         ;
+;     -- 2 input functions                    ; 34         ;
 ;     -- 1 input functions                    ; 5          ;
 ;     -- 0 input functions                    ; 0          ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 199        ;
+;     -- normal mode                          ; 196        ;
 ;     -- arithmetic mode                      ; 22         ;
 ;     -- qfbk mode                            ; 0          ;
 ;     -- register cascade mode                ; 0          ;
@@ -251,8 +251,8 @@ agreement for further details.
 ; I/O pins                                    ; 83         ;
 ; Maximum fan-out node                        ; SCLK_I2S_1 ;
 ; Maximum fan-out                             ; 42         ;
-; Total fan-out                               ; 755        ;
-; Average fan-out                             ; 2.48       ;
+; Total fan-out                               ; 749        ;
+; Average fan-out                             ; 2.49       ;
 +---------------------------------------------+------------+
 
 
@@ -261,7 +261,7 @@ agreement for further details.
 +-------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node          ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                        ; Entity Name             ; Library Name ;
 +-------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------+-------------------------+--------------+
-; |AVRX1400H                          ; 221 (45)    ; 134          ; 0          ; 83   ; 0            ; 87 (45)      ; 70 (0)            ; 64 (0)           ; 26 (0)          ; 0 (0)      ; |AVRX1400H                                                                 ; AVRX1400H               ; work         ;
+; |AVRX1400H                          ; 218 (42)    ; 134          ; 0          ; 83   ; 0            ; 84 (42)      ; 70 (0)            ; 64 (0)           ; 26 (0)          ; 0 (0)      ; |AVRX1400H                                                                 ; AVRX1400H               ; work         ;
 ;    |ADC_CLK_GEN:inst63|             ; 10 (10)     ; 9            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 9 (9)            ; 8 (8)           ; 0 (0)      ; |AVRX1400H|ADC_CLK_GEN:inst63                                              ; ADC_CLK_GEN             ; work         ;
 ;    |ADC_FS_Manager:inst206|         ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |AVRX1400H|ADC_FS_Manager:inst206                                          ; ADC_FS_Manager          ; work         ;
 ;    |DSD_TDM_Channel_Divider:inst79| ; 95 (95)     ; 72           ; 0          ; 0    ; 0            ; 23 (23)      ; 34 (34)           ; 38 (38)          ; 5 (5)           ; 0 (0)      ; |AVRX1400H|DSD_TDM_Channel_Divider:inst79                                  ; DSD_TDM_Channel_Divider ; work         ;
@@ -1225,7 +1225,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Thu Jan 12 09:50:21 2017
+    Info: Processing started: Fri Jan 13 10:54:19 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AVR1911Digital -c AVRX1400H
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1330,14 +1330,14 @@ Warning (21074): Design contains 9 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "DSP1OUTFW"
     Warning (15610): No output dependent on input pin "PLDERR2"
     Warning (15610): No output dependent on input pin "SDOUT_I2S_2"
-Info (21057): Implemented 304 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 301 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 46 input pins
     Info (21059): Implemented 37 output pins
-    Info (21061): Implemented 221 logic cells
+    Info (21061): Implemented 218 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 32 warnings
-    Info: Peak virtual memory: 834 megabytes
-    Info: Processing ended: Thu Jan 12 09:50:38 2017
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:38
+    Info: Peak virtual memory: 836 megabytes
+    Info: Processing ended: Fri Jan 13 10:54:37 2017
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:39
 
 

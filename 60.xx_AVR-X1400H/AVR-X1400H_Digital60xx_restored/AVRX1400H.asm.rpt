@@ -1,5 +1,5 @@
 Assembler report for AVRX1400H
-Thu Jan 12 09:50:45 2017
+Fri Jan 13 10:54:45 2017
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -39,7 +39,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Jan 12 09:50:45 2017 ;
+; Assembler Status      ; Successful - Fri Jan 13 10:54:45 2017 ;
 ; Revision Name         ; AVRX1400H                             ;
 ; Top-level Entity Name ; AVRX1400H                             ;
 ; Family                ; MAX V                                 ;
@@ -71,7 +71,7 @@ agreement for further details.
 +----------------+-----------------------------------------------------------------------------------------------------------------+
 ; Device         ; 5M570ZF256C5                                                                                                    ;
 ; JTAG usercode  ; 0xFFFF6003                                                                                                      ;
-; Checksum       ; 0x0031C7D2                                                                                                      ;
+; Checksum       ; 0x0031B3AF                                                                                                      ;
 +----------------+-----------------------------------------------------------------------------------------------------------------+
 
 
@@ -90,14 +90,14 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Thu Jan 12 09:50:44 2017
+    Info: Processing started: Fri Jan 13 10:54:44 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off AVR1911Digital -c AVRX1400H
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 721 megabytes
-    Info: Processing ended: Thu Jan 12 09:50:45 2017
+    Info: Processing ended: Fri Jan 13 10:54:45 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
