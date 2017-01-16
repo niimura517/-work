@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AVRX1400H
-Fri Jan 13 10:54:37 2017
+Mon Jan 16 18:30:48 2017
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -90,7 +90,7 @@ agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri Jan 13 10:54:37 2017       ;
+; Analysis & Synthesis Status ; Successful - Mon Jan 16 18:30:48 2017       ;
 ; Quartus Prime Version       ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name               ; AVRX1400H                                   ;
 ; Top-level Entity Name       ; AVRX1400H                                   ;
@@ -1225,7 +1225,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Fri Jan 13 10:54:19 2017
+    Info: Processing started: Mon Jan 16 18:30:30 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AVR1911Digital -c AVRX1400H
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1263,11 +1263,17 @@ Info (12127): Elaborating entity "AVRX1400H" for the top level hierarchy
 Warning (275006): Can't find a definition for parameter AVRX1400HAudioPLD -- assuming Ver. 60.00   31-Aug'-2016 was intended to be a quoted string
 Warning (275009): Pin "SLRCK" not connected
 Warning (275009): Pin "SBCK" not connected
+Warning (275009): Pin "GPIO_1" not connected
 Warning (275009): Pin "GPIO_2" not connected
 Warning (275009): Pin "DSP1OUTFH" not connected
 Warning (275009): Pin "DSP1OUTFW" not connected
 Warning (275009): Pin "PLDERR2" not connected
 Warning (275009): Pin "SDOUT_I2S_2" not connected
+Warning (275008): Primitive "GND" of instance "inst100" not used
+Warning (275008): Primitive "AND2" of instance "inst101" not used
+Warning (275008): Primitive "GND" of instance "inst81" not used
+Warning (275008): Primitive "AND2" of instance "inst82" not used
+Warning (275008): Primitive "NOT" of instance "inst99" not used
 Warning (12125): Using design file rtl/megafunction/verilog/mux2in.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: MUX2in File: C:/Users/Hidemi.Niimura/Documents/-work/60.xx_AVR-X1400H/AVR-X1400H_Digital60xx_restored/rtl/megafunction/verilog/mux2in.tdf Line: 40
 Info (12128): Elaborating entity "MUX2in" for hierarchy "MUX2in:inst210"
@@ -1322,9 +1328,9 @@ Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "inst21"
 Warning (21074): Design contains 9 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "OSC22M"
-    Warning (15610): No output dependent on input pin "GPIO_1"
     Warning (15610): No output dependent on input pin "SLRCK"
     Warning (15610): No output dependent on input pin "SBCK"
+    Warning (15610): No output dependent on input pin "GPIO_1"
     Warning (15610): No output dependent on input pin "GPIO_2"
     Warning (15610): No output dependent on input pin "DSP1OUTFH"
     Warning (15610): No output dependent on input pin "DSP1OUTFW"
@@ -1334,9 +1340,9 @@ Info (21057): Implemented 301 device resources after synthesis - the final resou
     Info (21058): Implemented 46 input pins
     Info (21059): Implemented 37 output pins
     Info (21061): Implemented 218 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 32 warnings
-    Info: Peak virtual memory: 836 megabytes
-    Info: Processing ended: Fri Jan 13 10:54:37 2017
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
+    Info: Peak virtual memory: 834 megabytes
+    Info: Processing ended: Mon Jan 16 18:30:48 2017
     Info: Elapsed time: 00:00:18
     Info: Total CPU time (on all processors): 00:00:39
 

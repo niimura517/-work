@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition"
 
-// DATE "01/13/2017 10:54:51"
+// DATE "01/16/2017 18:31:00"
 
 // 
 // Device: Altera 5M570ZF256C5 Package FBGA256
@@ -92,7 +92,6 @@ module AVRX1400H (
 	Z2DACDATA,
 	DIRAUXMCK,
 	OSC22M,
-	GPIO_1,
 	HDMISPDIF,
 	DACMCK,
 	DSP1INBCK,
@@ -108,6 +107,7 @@ module AVRX1400H (
 	DSP1INRSV_SW,
 	SLRCK,
 	SBCK,
+	GPIO_1,
 	GPIO_2,
 	DSP1OUTFH,
 	DSP1OUTFW,
@@ -175,7 +175,6 @@ output 	Z2DACLRCK;
 output 	Z2DACDATA;
 output 	DIRAUXMCK;
 input 	OSC22M;
-input 	GPIO_1;
 output 	HDMISPDIF;
 output 	DACMCK;
 output 	DSP1INBCK;
@@ -191,6 +190,7 @@ output 	Z2DACMUTE;
 output 	DSP1INRSV_SW;
 input 	SLRCK;
 input 	SBCK;
+input 	GPIO_1;
 input 	GPIO_2;
 input 	DSP1OUTFH;
 input 	DSP1OUTFW;
@@ -377,19 +377,19 @@ wire \inst197~0_combout ;
 wire \inst198~0_combout ;
 wire \inst199~0_combout ;
 wire \inst50~0_combout ;
-wire [0:0] \inst97|lpm_ff_component|dffs ;
+wire [0:0] \inst72|LPM_MUX_component|auto_generated|result_node ;
 wire [5:0] \inst134|dat_o ;
-wire [0:0] \inst29|lpm_ff_component|dffs ;
 wire [15:0] \inst141|dat_o ;
 wire [16:0] \inst79|Ch1_TxReg ;
 wire [8:0] \inst63|MCKDiv ;
 wire [8:0] \inst19|dat_o ;
+wire [0:0] \inst97|lpm_ff_component|dffs ;
+wire [0:0] \inst29|lpm_ff_component|dffs ;
 wire [15:0] \inst141|r ;
 wire [16:0] \inst79|Ch0_TxReg ;
 wire [0:0] \inst25|lpm_ff_component|dffs ;
 wire [31:0] \inst79|RxReg ;
 wire [4:0] \inst79|BitCount ;
-wire [0:0] \inst72|LPM_MUX_component|auto_generated|result_node ;
 wire [1:0] \inst66|Q ;
 
 
@@ -8982,16 +8982,6 @@ maxv_io \OSC22M~I (
 defparam \OSC22M~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_G2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \GPIO_1~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(),
-	.padio(GPIO_1));
-// synopsys translate_off
-defparam \GPIO_1~I .operation_mode = "input";
-// synopsys translate_on
-
 // Location: PIN_L16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
 maxv_io \HDMISPDIF~I (
 	.datain(\inst59~0_combout ),
@@ -9110,6 +9100,16 @@ maxv_io \SBCK~I (
 	.padio(SBCK));
 // synopsys translate_off
 defparam \SBCK~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_G2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \GPIO_1~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(GPIO_1));
+// synopsys translate_off
+defparam \GPIO_1~I .operation_mode = "input";
 // synopsys translate_on
 
 // Location: PIN_G3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default

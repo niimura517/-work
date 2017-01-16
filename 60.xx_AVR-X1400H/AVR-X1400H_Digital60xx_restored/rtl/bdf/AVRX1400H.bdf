@@ -173,7 +173,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 4896 2864 5064 2880)
+	(rect 608 2288 776 2304)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
 	(text "GPIO_1" (rect 5 0 54 14)(font "Arial" ))
 	(pt 168 8)
@@ -186,7 +186,7 @@ agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 152 18)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 4840 2864 4896 2880))
+	(annotation_block (location)(rect 552 2288 608 2304))
 )
 (pin
 	(input)
@@ -207,7 +207,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 608 2296 776 2312)
+	(rect 608 2320 776 2336)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
 	(text "GPIO_2" (rect 5 0 54 14)(font "Arial" ))
 	(pt 168 8)
@@ -220,7 +220,7 @@ agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 152 18)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 552 2296 608 2312))
+	(annotation_block (location)(rect 552 2320 608 2336))
 )
 (pin
 	(input)
@@ -802,7 +802,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 592 2328 776 2344)
+	(rect 592 2352 776 2368)
 	(text "INPUT" (rect 141 0 182 11)(font "Arial" (font_size 6)))
 	(text "SDOUT_I2S_2" (rect 5 0 95 14)(font "Arial" ))
 	(pt 184 8)
@@ -815,7 +815,7 @@ agreement for further details.
 		(line (pt 125 12)(pt 129 8))
 	)
 	(text "VCC" (rect 144 7 168 18)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 536 2328 592 2344))
+	(annotation_block (location)(rect 536 2352 592 2368))
 )
 (pin
 	(output)
@@ -6571,6 +6571,23 @@ agreement for further details.
 		(line (pt 14 25)(pt 32 16))
 	)
 )
+(symbol
+	(rect 5320 2880 5352 2912)
+	(text "GND" (rect 8 16 32 27)(font "Arial" (font_size 6)))
+	(text "inst17" (rect 3 21 52 35)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 14)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 14)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
 (connector
 	(pt 304 2072)
 	(pt 296 2072)
@@ -7842,14 +7859,6 @@ agreement for further details.
 (connector
 	(pt 5224 2888)
 	(pt 5224 2920)
-)
-(connector
-	(pt 5248 2872)
-	(pt 5064 2872)
-)
-(connector
-	(pt 5312 2880)
-	(pt 5336 2880)
 )
 (connector
 	(pt 5496 2800)
@@ -9200,6 +9209,10 @@ agreement for further details.
 (connector
 	(pt 4208 2864)
 	(pt 4536 2864)
+)
+(connector
+	(pt 5096 2872)
+	(pt 5248 2872)
 )
 (junction (pt 3280 1848))
 (junction (pt 3280 1624))

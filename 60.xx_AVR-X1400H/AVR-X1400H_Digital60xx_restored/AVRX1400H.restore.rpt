@@ -1,5 +1,5 @@
 Restore Archived Project report for AVRX1400H
-Fri Jan 13 10:59:22 2017
+Mon Jan 16 18:28:02 2017
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------------+
 ; Restore Archived Project Summary                                        ;
 +---------------------------------+---------------------------------------+
-; Restore Archived Project Status ; Successful - Fri Jan 13 10:59:22 2017 ;
+; Restore Archived Project Status ; Successful - Mon Jan 16 18:28:02 2017 ;
 ; Revision Name                   ; AVRX1400H                             ;
 ; Top-level Entity Name           ; AVRX1400H                             ;
 ; Family                          ; MAX V                                 ;
@@ -52,8 +52,8 @@ Info: Generated report 'AVRX1400H.restore.rpt'
 Info (23030): Evaluation of Tcl script c:/altera_lite/16.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 22 warnings
     Info: Peak virtual memory: 528 megabytes
-    Info: Processing ended: Fri Jan 13 10:59:22 2017
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Mon Jan 16 18:28:02 2017
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 
