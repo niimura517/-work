@@ -80,11 +80,13 @@ int front_sense() {
 	delay(50);  // Wait 500mS before next ranging
 }
 
+#define SW_SERVO 7
 #define START_PIN 9
 
-#define SWITCH_ON LOW
-#define SWITCH_OFF HIGH
+#define SWITCH_ON HIGH
+#define SWITCH_OFF LOW
 
+int value = 0;
 int mode = 0;
 
 
@@ -99,6 +101,7 @@ void setup(){
 
 	Serial.begin(9600);
 
+	pinMode(SW_SERVO, OUTPUT);
 	pinMode(START_PIN, INPUT_PULLUP);
 
 	RGBLED.begin() ;         // RGBLEDのライブラリを初期化する
@@ -155,35 +158,53 @@ void loop(){
 
 //	full_stop();
 
+//	int tmp_cnt;	// 拮抗処理用カウンタ
+	
 	while (1) {
 		if (digitalRead(START_PIN)==LOW) break;
 	}
 
 	dist = sensor.readRangeSingleMillimeters()/10.0 + 0.1; // 単位を"cm”に変換 + 補正
-	Serial.print(dist); 
+
+	int sum_d = 0;
+	int v_sum_n = 0;
+	while(v_sum_n < 5){
+		sum_d = sum_d + (dist);
+		v_sum_n = v_sum_n +1;
+	}
+	value = sum_d / 5;
+	Serial.print(value); 
 	Serial.print("\t");   // (改行)タブを送信
 	Serial.println();   
 
-	if (dist <= 20){
-		analogWrite(SERVO1,15); // PWM出力。(デューティー(Hi): 1000us)
+	if (value <= 20){
+		analogWrite(SERVO1,16); // PWM出力。(デューティー(Hi): 1023.75us)
+		delayMicroseconds(1000);
+		digitalWrite(SW_SERVO, SWITCH_ON);
 		RGBLED.setPixelColor(0, 255,0,0);
-		RGBLED.show();        
+		RGBLED.show();
 	}
-	else if (dist > 20 && dist < 100){
-		analogWrite(SERVO1,19); // PWM出力。(デューティー(Hi): 1200us)
+	else if (value > 20 && value < 100){
+		analogWrite(SERVO1,19); // PWM出力。(デューティー(Hi): 1215.70us)
+		delayMicroseconds(1000);
+		digitalWrite(SW_SERVO, SWITCH_ON);
 		RGBLED.setPixelColor(0, 0,255,0);
-		RGBLED.show();        
+		RGBLED.show();
 	}
-	else if (dist >= 100 && dist < 200){
-		analogWrite(SERVO1,22); // PWM出力。(デューティー(Hi): 1400us)
+	else if (value >= 100 && value < 200){
+		analogWrite(SERVO1,22); // PWM出力。(デューティー(Hi): 1407.66us)
+		delayMicroseconds(1000);;
+		digitalWrite(SW_SERVO, SWITCH_ON);
 		RGBLED.setPixelColor(0, 0,0,255);
 		RGBLED.show();
 	}
 	else{
-		analogWrite(SERVO1,25); // PWM出力。(デューティー(Hi): 1600us)
+		analogWrite(SERVO1,24); // PWM出力。(デューティー(Hi): 1535.63us)
+		delayMicroseconds(1000);;
+		digitalWrite(SW_SERVO, SWITCH_OFF);
 		RGBLED.setPixelColor(0, 0,0,0);
-	RGBLED.show();
+		RGBLED.show();
 	}
 
-delay(5);
+delay(10);
 }
